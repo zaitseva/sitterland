@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="ru"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie10 lt-ie9 lt-ie8" lang="ru"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie10 lt-ie9" lang="ru"> <![endif]-->
+<!--[if IE 9]>    <html class="lt-ie10" lang="ru"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="ru">
+	<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sitterland</title>
+    <link rel="stylesheet" href="css/style.css"/>
+
+	<script type="text/javascript" src="js/libs.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+	
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+	<div class="homepage">
+			<header id="header" class="header">	
+				<div class="wrapper clearfix">
+					<div class="logo">
+						<a href="#"><img src="./icons/logo.png" alt="Sitterland"></a>
+						<span class="slogan">Выбирая лучших!</span>
+					</div>
+						<nav class="b-profile_nav">
+							<ul class="b-menu">
+								<li class="menuitem"><a href="#">Сообщения <span class="num">12</span></a></li>
+								<li class="menuitem"><a href="#">Отклики</a></li>
+								<li class="menuitem"><a href="#">поиск работников</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-click="dropdown" data-delay="0" role="button"><span class="ic_user">Костантин К.</span><span class="caret"></span></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Профиль</a></li>
+										<li><a href="#">Помощь</a></li>
+										<li><a href="#">Выход</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+				</div>
+			</header>
+		 	<div class="b-container clearfix">
+				<aside class="b-aside w220 b-filtr_bl" style="margin-right:4px;">
+					<form action=".">
+					<div class="b-asideblock">
+						<h2>Поиск работников</h2>
+						<div class="b-find_bl">
+							<div class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-click="dropdown" data-delay="0" role="button"><span>Няни</span><span class="caret"></span></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Домработницы</a></li>
+										<li><a href="#">Сиделки</a></li>
+									</ul>
+								</div>
+								<div>
+									Москва
+									<span class="b-find_address"></span>
+								</div>
+								<div>
+									м. Университет
+									<span class="b-find_metro"></span>
+								</div>
+								<div class="b-map_bl">
+									<div class="map" id="map4" data-lat="55.69144068" data-lng="37.53382003" data-zoom="14"></div>
+									<a href="#" class="button_white"><span class="ic_map">На карте</span></a>
+									<script>
+										ymaps.ready(function () {
+											var cont = $('#map4')</span>;
+											var myMap = new ymaps.Map("map4", {
+											  center: [cont.data('lat'), cont.data('lng')],
+											  zoom: cont.data('zoom'),
+											  type: "yandex#map",
+											  controls:[]
+											});
+										 });
+									</script>
+								</div>
+								<div class="b-my-choice">
+									<h4>Текущий выбор</h4>
+									<span><a href="#" class="ic_delete">удалить</a> Менее чем 1 км</span>
+									<span><a href="#" class="ic_delete">удалить</a> Еженедельный</span>
+									<span><a href="#" class="ic_delete">удалить</a> Без проживания</span>
+								</div>
+								<div class="b-butt_row">
+									<span><a href="#" class="ic_delete">удалить</a> Очистить все</span>
+								</div>
+
+						</div>
+					</div>
+					<div class="b-asideblock b-filters_list">
+						<div class="b-filtr">
+							<span class="name" data-toggle="collapse" data-target="#filtr31">Анкеты работников</span>
+							<div id="filtr31" class="collapse in">
+								<span class="chkwrap">
+									<input type="radio" checked="checked" class="custom" name="name_01" id="radio_31" value="1" /><label for="radio_31">Все <span>(23 685)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_01" id="radio_32" value="2" /><label for="radio_32">Только новые <span>(893)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+							<span  class="name" data-toggle="collapse" data-target="#filtr32">Возраст</span>
+							<div id="filtr32" class="collapse in">
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_31" value="3" /><label for="check_31">18-25 лет <span>(75)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_32" value="4" /><label for="check_32">26-30 лет<span>(14)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_33" value="5" /><label for="check_33">31-40 лет <span>(128)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_31" value="3" /><label for="check_31">41-50 лет <span>(128)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_32" value="4" /><label for="check_32">51-60 лет <span>(128)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_33" value="5" /><label for="check_33">61 и более лет <span>(128)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+							<span  class="name" data-toggle="collapse" data-target="#filtr39">Опыт</span>
+							<div id="filtr39" class="collapse in">
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_34" value="3" /><label for="check_34">Без опыта <span>(2)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_34" value="4" /><label for="check_34">1-3 года <span>(54)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_36" value="5" /><label for="check_36">4-6 лет <span>(245)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_37" value="3" /><label for="check_37">7-10 лет <span>(1 235)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_38" value="4" /><label for="check_38">10 и более лет <span>(190)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr36"  class="name">оплата</span>
+								<div id="filtr36" class="collapse in">
+									<select class="custom" name="name3" id="settings12"  tabindex="-1">
+											<option value="02">Руб/час</option>
+											<option value="01">Руб/мес</option>
+									</select>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_13" id="check_311" value="20" /><label for="check_311">По договоренности <span>(352)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_14" id="check_312" value="21" /><label for="check_312">Менее 150 <span>(1 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_15" id="check_313" value="22" /><label for="check_313">150-200 <span>(8 967)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_16" id="check_314" value="23" /><label for="check_314">200-250 <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_17" id="check_315" value="24" /><label for="check_315">250-300 <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_18" id="check_316" value="25" /><label for="check_316">300-350 <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_19" id="check_317" value="26" /><label for="check_317">350-400 <span>(957)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_20" id="check_318" value="27" /><label for="check_318">более 400 <span>(1 234)</span></label> 
+									</span>
+								</div>
+						</div>
+						<div class="b-filtr">
+							<span data-toggle="collapse" data-target="#filtr33" class=" name">Удаленность</span>
+							<div id="filtr33" class="collapse in">
+								<span class="chkwrap">
+									<input type="radio" checked="checked" class="custom" name="name_05" id="radio_33" value="6" /><label for="radio_33">Менее чем 1 км. <span>(2)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_34" value="7" /><label for="radio_34">Менее чем 5 км. <span>(54)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_35" value="8" /><label for="radio_35">Менее чем 10 км. <span>(245)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_36" value="9" /><label for="radio_36">Менее чем 20 км. <span>(1 235)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio"  class="custom" name="name_05" id="radio_37" value="10" /><label for="radio_37">Менее чем 30 км. <span>(8 760)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_38" value="11" /><label for="radio_38">Менее чем 40 км. <span>(4 660)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_39" value="12" /><label for="radio_39">Менее чем 50 км. <span>(18 760)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+							<span  class="name" data-toggle="collapse" data-target="#filtr311">Режим работы</span>
+							<div id="filtr311" class="collapse in">
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_39" value="3" /><label for="check_39">Неполный рабочий  <br/>день <span>(234)</span></label> 
+ 								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_310" value="4" /><label for="check_310">Полный рабочий  <br/>день <span>(436)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_319" value="5" /><label for="check_319">Доступен на короткий срок <span>(734)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_320" value="3" /><label for="check_320">Доступен на длительный срок <span>(1 234)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+							<span  class="name" data-toggle="collapse" data-target="#filtr312">Образование</span>
+							<div id="filtr312" class="collapse in">
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_321" value="3" /><label for="check_321">Высшее <span>(567)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_322" value="4" /><label for="check_3222">Среднее специальное педагогическое <span>(867)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_323" value="5" /><label for="check_323">Высшее педагогическое <span>(1 234)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+							<span  class="name" data-toggle="collapse" data-target="#filtr313">Дополнительно</span>
+							<div id="filtr313" class="collapse in">
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_324" value="3" /><label for="check_324">С видео обращением <span>(87)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_325" value="4" /><label for="check_325">С отзывами <span>(2 383)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_326" value="5" /><label for="check_326">С фотографией <span>(4 563)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_327" value="3" /><label for="check_327">Резидент <span>(3 567)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_328" value="4" /><label for="check_328">Положительно к домашним животным <span>(7 549)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_329" value="5" /><label for="check_329">Есть свой транспорт <span>(23)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_330" value="3" /><label for="check_330">Есть водительское удостоверение <span>(758)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_331" value="4" /><label for="check_331">Не курящие  <span>(1 456)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr34" class=" name">Место работы</span>
+								<div id="filtr34" class="collapse in">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_06" id="check_332" value="13" /><label for="check_332">Без проживания <span>(14 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_07" id="check_333" value="14" /><label for="check_333">С проживанием <span>(8 967)</span></label> 
+									</span>
+								</div>
+						</div>
+						<div class="b-filtr">
+								<span  data-toggle="collapse" data-target="#filtr35" class=" name">Возрастные группы детей</span>
+								<div id="filtr35" class="collapse in">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_08" id="check_334" value="15" /><label for="check_334">0-1 год <span>(1 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_09" id="check_335" value="16" /><label for="check_335">1-3 года <span>(8 967)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_10" id="check_336" value="17" /><label for="check_336">4-6 лет <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_11" id="check_337" value="18" /><label for="check_337">7-10 лет <span>(957)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_12" id="check_338" value="19" /><label for="check_338">более 10 лет <span>(546)</span></label> 
+									</span>
+								</div>
+						</div>
+						
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr37" class=" name">Кол-во детей для одновременной работы</span>
+								<div id="filtr37" class="collapse in">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_21" id="check_339" value="28" /><label for="check_339">1 <span>(1 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_22" id="check_340" value="29" /><label for="check_340">2 <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_23" id="check_341" value="30" /><label for="check_341">3 <span>(957)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_24" id="check_342" value="31" /><label for="check_342">4 и более <span>(1 234)</span></label> 
+									</span>
+								</div>
+								
+						</div>
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr38" class=" name">Дополнительные услуги</span>
+								<div id="filtr38" class="collapse in">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_25" id="check_343" value="32" /><label for="check_343">Приготовление еды <span>(1 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_26" id="check_344" value="33" /><label for="check_344">Уборка, стирка, глажка <span>(8 967)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_27" id="check_345" value="34" /><label for="check_345">Сопровождение ребёнка <span>(482)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_28" id="check_346" value="35" /><label for="check_346">Развитие по возрасту <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_29" id="check_347" value="36" /><label for="check_347">Лёгкая работа по дому <span>(206)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_27" id="check_348" value="34" /><label for="check_348">Разовые поручения <span>(957)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_28" id="check_349" value="35" /><label for="check_349">Отдых с детьми поездки <span>(1 234)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_29" id="check_350" value="36" /><label for="check_350">Контроль выполнения домашних заданий <span>(357)</span></label> 
+									</span>
+								</div>
+						</div>
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr310" class=" name">Языки</span>
+								<div id="filtr310" class="collapse in">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_25" id="check_351" value="32" /><label for="check_351">Английский <span>(1 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_26" id="check_352" value="33" /><label for="check_352">Испанский <span>(8 967)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_27" id="check_353" value="34" /><label for="check_353">Немецкий <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_28" id="check_354" value="35" /><label for="check_354">Французский <span>(957)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_29" id="check_355" value="36" /><label for="check_355">Другие <span>(1 234)</span></label> 
+									</span>
+								</div>
+						</div>
+
+					</div>
+					</form>
+				</aside>
+				<aside class="b-aside w220 b-filtr_bl" style="margin-right:4px;">
+					<form action=".">
+					<div class="b-asideblock">
+						<h2>Поиск работников</h2>
+						<div class="b-find_bl">
+							<div class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-click="dropdown" data-delay="0" role="button"><span>Сиделки</span><span class="caret"></span></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Домработницы</a></li>
+										<li><a href="#">Няни</a></li>
+									</ul>
+								</div>
+								<div>
+									Москва
+									<span class="b-find_address"></span>
+								</div>
+								<div>
+									м. Университет
+									<span class="b-find_metro"></span>
+								</div>
+								<div class="b-map_bl">
+									<div class="map" id="map5" data-lat="55.69144068" data-lng="37.53382003" data-zoom="14"></div>
+									<a href="#" class="button_white"><span class="ic_map">На карте</span></a>
+									<script>
+										ymaps.ready(function (){
+											var cont = $('#map5');
+											var myMap = new ymaps.Map("map5", {
+											  center: [cont.data('lat'), cont.data('lng')],
+											  zoom: cont.data('zoom'),
+											  type: "yandex#map",
+											  controls:[]
+											});
+										 });
+									</script>
+								</div>
+								<div class="b-my-choice">
+									<h4>Текущий выбор</h4>
+									<span><a href="#" class="ic_delete">удалить</a> Менее чем 1 км</span>
+									<span><a href="#" class="ic_delete">удалить</a> Еженедельный</span>
+									<span><a href="#" class="ic_delete">удалить</a> Без проживания</span>
+								</div>
+								<div class="b-butt_row">
+									<span><a href="#" class="ic_delete">удалить</a> Очистить все</span>
+								</div>
+
+						</div>
+					</div>
+					<div class="b-asideblock b-filters_list">
+						<div class="b-filtr">
+							<span class="name" data-toggle="collapse" data-target="#filtr41">Анкеты работников</span>
+							<div id="filtr41" class="collapse in">
+								<span class="chkwrap">
+									<input type="radio" checked="checked" class="custom" name="name_01" id="radio_41" value="1" /><label for="radio_41">Все <span>(23 685)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_01" id="radio_42" value="2" /><label for="radio_42">Только новые <span>(893)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+							<span  class="name" data-toggle="collapse" data-target="#filtr42">Возраст</span>
+							<div id="filtr42" class="collapse in">
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_41" value="3" /><label for="check_41">18-25 лет <span>(75)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_42" value="4" /><label for="check_42">26-30 лет<span>(14)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_43" value="5" /><label for="check_43">31-40 лет <span>(128)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_41" value="3" /><label for="check_41">41-50 лет <span>(128)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_42" value="4" /><label for="check_42">51-60 лет <span>(128)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_43" value="5" /><label for="check_43">61 и более лет <span>(128)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+							<span  class="name" data-toggle="collapse" data-target="#filtr49">Опыт</span>
+							<div id="filtr49" class="collapse in">
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_44" value="3" /><label for="check_44">Без опыта <span>(2)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_44" value="4" /><label for="check_44">1-3 года <span>(54)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_46" value="5" /><label for="check_46">4-6 лет <span>(245)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_47" value="3" /><label for="check_47">7-10 лет <span>(1 235)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_48" value="4" /><label for="check_48">10 и более лет <span>(190)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr46"  class="name">оплата</span>
+								<div id="filtr46" class="collapse in">
+									<select class="custom" name="name3" id="settings12"  tabindex="-1">
+											<option value="02">Руб/час</option>
+											<option value="01">Руб/мес</option>
+									</select>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_13" id="check_411" value="20" /><label for="check_411">По договоренности <span>(352)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_14" id="check_412" value="21" /><label for="check_412">Менее 100 <span>(1 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_15" id="check_413" value="22" /><label for="check_413">100-150 <span>(8 967)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_16" id="check_414" value="23" /><label for="check_414">150-200 <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_17" id="check_415" value="24" /><label for="check_415">200-250 <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_20" id="check_418" value="27" /><label for="check_418">более 250 <span>(1 234)</span></label> 
+									</span>
+								</div>
+						</div>
+						<div class="b-filtr">
+							<span data-toggle="collapse" data-target="#filtr43" class=" name">Удаленность</span>
+							<div id="filtr43" class="collapse in">
+								<span class="chkwrap">
+									<input type="radio" checked="checked" class="custom" name="name_05" id="radio_43" value="6" /><label for="radio_43">Менее чем 1 км. <span>(2)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_44" value="7" /><label for="radio_44">Менее чем 5 км. <span>(54)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_45" value="8" /><label for="radio_45">Менее чем 10 км. <span>(245)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_46" value="9" /><label for="radio_46">Менее чем 20 км. <span>(1 235)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio"  class="custom" name="name_05" id="radio_47" value="10" /><label for="radio_47">Менее чем 30 км. <span>(8 760)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_48" value="11" /><label for="radio_48">Менее чем 40 км. <span>(4 660)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_49" value="12" /><label for="radio_49">Менее чем 50 км. <span>(18 760)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+							<span  class="name" data-toggle="collapse" data-target="#filtr411">Режим работы</span>
+							<div id="filtr411" class="collapse in">
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_49" value="3" /><label for="check_49">Неполный рабочий  <br/>день <span>(234)</span></label> 
+ 								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_410" value="4" /><label for="check_410">Полный рабочий  <br/>день <span>(436)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_419" value="5" /><label for="check_419">Доступен на короткий срок <span>(734)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_420" value="3" /><label for="check_420">Доступен на длительный срок <span>(1 234)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+							<span  class="name" data-toggle="collapse" data-target="#filtr412">Образование</span>
+							<div id="filtr412" class="collapse in">
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_421" value="3" /><label for="check_421">Высшее <span>(567)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_422" value="4" /><label for="check_4222">Среднее-специальное медицинское <span>(867)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_423" value="5" /><label for="check_423">Высшее медицинское <span>(1 234)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+							<span  class="name" data-toggle="collapse" data-target="#filtr413">Дополнительно</span>
+							<div id="filtr413" class="collapse in">
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_424" value="3" /><label for="check_424">С видео обращением <span>(87)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_425" value="4" /><label for="check_425">С отзывами <span>(2 383)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_426" value="5" /><label for="check_426">С фотографией <span>(4 563)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_427" value="3" /><label for="check_427">Резидент <span>(3 567)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_428" value="4" /><label for="check_428">Положительно к домашним животным <span>(7 549)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_429" value="5" /><label for="check_429">Есть свой транспорт <span>(23)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_430" value="3" /><label for="check_430">Есть водительское удостоверение <span>(758)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_431" value="4" /><label for="check_431">Не курящие  <span>(1 456)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr44" class=" name">Место работы</span>
+								<div id="filtr44" class="collapse in">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_06" id="check_432" value="13" /><label for="check_432">Без проживания <span>(14 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_07" id="check_433" value="14" /><label for="check_433">С проживанием <span>(8 967)</span></label> 
+									</span>
+								</div>
+						</div>
+						<div class="b-filtr">
+								<span  data-toggle="collapse" data-target="#filtr45" class=" name">Возрастные группы детей</span>
+								<div id="filtr45" class="collapse in">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_08" id="check_434" value="15" /><label for="check_434">Дети, 0-6 лет <span>(1 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_09" id="check_435" value="16" /><label for="check_435">Дети, 7-17 лет <span>(8 967)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_10" id="check_436" value="17" /><label for="check_436">Взрослые, 18-54 лет <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_11" id="check_437" value="18" /><label for="check_437">Пенсионный возраст, от 55 лет <span>(957)</span></label> 
+									</span>
+									
+								</div>
+						</div>
+						
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr47" class=" name">Кол-во детей для одновременной работы</span>
+								<div id="filtr47" class="collapse in">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_21" id="check_439" value="28" /><label for="check_439">1 <span>(1 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_22" id="check_440" value="29" /><label for="check_440">2 <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_23" id="check_441" value="30" /><label for="check_441">3 <span>(957)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_24" id="check_442" value="31" /><label for="check_442">4 и более <span>(1 234)</span></label> 
+									</span>
+								</div>
+								
+						</div>
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr48" class=" name">Дополнительные услуги</span>
+								<div id="filtr48" class="collapse in">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_25" id="check_443" value="32" /><label for="check_443">Приготовление еды <span>(1 567)</span></label> 
+									</span>
+									
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_27" id="check_445" value="34" /><label for="check_445">Сопровождение <span>(482)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_28" id="check_446" value="35" /><label for="check_446">Гигиена  <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_29" id="check_447" value="36" /><label for="check_447">Массаж <span>(206)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_26" id="check_444" value="33" /><label for="check_444">Уборка, стирка, глажка <span>(8 967)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_27" id="check_448" value="34" /><label for="check_448">Разовые поручения <span>(957)</span></label> 
+									</span>
+									
+								</div>
+						</div>
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr410" class=" name">Уход за больными</span>
+								<div id="filtr410" class="collapse in">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_25" id="check_451" value="32" /><label for="check_451">Послеоперационный уход <span>(1 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_26" id="check_452" value="33" /><label for="check_452">Внутривенные инъекции, капельницы <span>(3 565)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_27" id="check_453" value="34" /><label for="check_453">Внутримышечные инъекции <span>(6 378)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_28" id="check_454" value="35" /><label for="check_454">Уход за лежачими больными <span>(1 736)</span></label> 
+									</span>
+									
+								</div>
+						</div>
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr414" class=" name">Диагнозы</span>
+								<div id="filtr414" class="collapse in">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_25" id="check_451" value="32" /><label for="check_451">Аутизм <span>(1 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_26" id="check_452" value="33" /><label for="check_452">Болезнь Альцгеймера <span>(3 565)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_27" id="check_453" value="34" /><label for="check_453">ДЦП <span>(6 378)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_28" id="check_454" value="35" /><label for="check_454">Постинсультная реабилитация <span>(1 733)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_25" id="check_455" value="32" /><label for="check_455">Постинфарктная реабилитация <span>(1 536)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_26" id="check_456" value="33" /><label for="check_456">Онкологические заболевания <span>(1 116)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_27" id="check_457" value="34" /><label for="check_457">Болезнь Паркинсона <span>(1 736)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_28" id="check_458" value="35" /><label for="check_458">Психические расстройства <span>(736)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_25" id="check_459" value="32" /><label for="check_459">Травмы, ампутации <span>(2 736)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_26" id="check_460" value="33" /><label for="check_460">Сахарный диабет <span>(8 456)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_27" id="check_461" value="34" /><label for="check_462">Эпилепсия <span>(385)</span></label> 
+									</span>
+									
+								</div>
+						</div>
+
+					</div>
+					</form>
+				</aside>
+				<aside class="b-aside w220 b-filtr_bl" style="margin-right:4px;">
+					<form action=".">
+					<div class="b-asideblock">
+						<h2>Поиск работников</h2>
+						<div class="b-find_bl">
+							<div class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-click="dropdown" data-delay="0" role="button"><span>Домработницы</span><span class="caret"></span></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Няни</a></li>
+										<li><a href="#">Сиделки</a></li>
+									</ul>
+								</div>
+								<div>
+									Москва
+									<span class="b-find_address"></span>
+								</div>
+								<div>
+									м. Университет
+									<span class="b-find_metro"></span>
+								</div>
+								<div class="b-map_bl">
+									<div class="map" id="map6" data-lat="55.69144068" data-lng="37.53382003" data-zoom="14"></div>
+									<a href="#" class="button_white"><span class="ic_map">На карте</span></a>
+									<script>
+										ymaps.ready(function () {
+											var cont = $('#map5');
+											var myMap = new ymaps.Map("map6", {
+											  center: [cont.data('lat'), cont.data('lng')],
+											  zoom: cont.data('zoom'),
+											  type: "yandex#map",
+											  controls:[]
+											});
+										 });
+									</script>
+								</div>
+								<div class="b-my-choice">
+									<h4>Текущий выбор</h4>
+									<span><a href="#" class="ic_delete">удалить</a> Менее чем 1 км</span>
+									<span><a href="#" class="ic_delete">удалить</a> Еженедельный</span>
+									<span><a href="#" class="ic_delete">удалить</a> Без проживания</span>
+								</div>
+								<div class="b-butt_row">
+									<span><a href="#" class="ic_delete">удалить</a> Очистить все</span>
+								</div>
+
+						</div>
+					</div>
+					<div class="b-asideblock b-filters_list">
+						<div class="b-filtr">
+							<span class="name" data-toggle="collapse" data-target="#filtr51">Анкеты работников</span>
+							<div id="filtr51" class="collapse in">
+								<span class="chkwrap">
+									<input type="radio" checked="checked" class="custom" name="name_01" id="radio_51" value="1" /><label for="radio_51">Все <span>(23 685)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_01" id="radio_52" value="2" /><label for="radio_52">Только новые <span>(893)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+							<span  class="name" data-toggle="collapse" data-target="#filtr52">Возраст</span>
+							<div id="filtr52" class="collapse in">
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_51" value="3" /><label for="check_51">18-25 лет <span>(75)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_52" value="4" /><label for="check_52">26-30 лет<span>(14)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_53" value="5" /><label for="check_53">31-40 лет <span>(128)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_51" value="3" /><label for="check_51">41-50 лет <span>(128)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_52" value="4" /><label for="check_52">51-60 лет <span>(128)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_53" value="5" /><label for="check_53">61 и более лет <span>(128)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+							<span  class="name" data-toggle="collapse" data-target="#filtr59">Опыт</span>
+							<div id="filtr59" class="collapse in">
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_54" value="3" /><label for="check_54">Без опыта <span>(2)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_54" value="4" /><label for="check_54">1-3 года <span>(54)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_56" value="5" /><label for="check_56">4-6 лет <span>(245)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_57" value="3" /><label for="check_57">7-10 лет <span>(1 235)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_58" value="4" /><label for="check_58">10 и более лет <span>(190)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr56"  class="name">оплата</span>
+								<div id="filtr56" class="collapse in">
+									<select class="custom" name="name3" id="settings12"  tabindex="-1">
+											<option value="02">Руб/выход</option>
+											<option value="01">Руб/мес</option>
+									</select>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_13" id="check_511" value="20" /><label for="check_511">По договоренности <span>(352)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_14" id="check_512" value="21" /><label for="check_512">Менее 500 <span>(1 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_15" id="check_513" value="22" /><label for="check_513">500-1000 <span>(8 967)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_16" id="check_514" value="23" /><label for="check_514">1000-1500 <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_17" id="check_515" value="24" /><label for="check_515">1500-2000 <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_18" id="check_516" value="25" /><label for="check_516">2000-2500 <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_19" id="check_517" value="26" /><label for="check_517">2500-3000 <span>(957)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_20" id="check_518" value="27" /><label for="check_518">более 3000 <span>(1 234)</span></label> 
+									</span>
+								</div>
+						</div>
+						<div class="b-filtr">
+							<span data-toggle="collapse" data-target="#filtr53" class=" name">Удаленность</span>
+							<div id="filtr53" class="collapse in">
+								<span class="chkwrap">
+									<input type="radio" checked="checked" class="custom" name="name_05" id="radio_53" value="6" /><label for="radio_53">Менее чем 1 км. <span>(2)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_54" value="7" /><label for="radio_54">Менее чем 5 км. <span>(54)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_55" value="8" /><label for="radio_55">Менее чем 10 км. <span>(245)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_56" value="9" /><label for="radio_56">Менее чем 20 км. <span>(1 235)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio"  class="custom" name="name_05" id="radio_57" value="10" /><label for="radio_57">Менее чем 30 км. <span>(8 760)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_58" value="11" /><label for="radio_58">Менее чем 40 км. <span>(4 660)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_59" value="12" /><label for="radio_59">Менее чем 50 км. <span>(18 760)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+							<span  class="name" data-toggle="collapse" data-target="#filtr511">Режим работы</span>
+							<div id="filtr511" class="collapse in">
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_59" value="3" /><label for="check_59">Неполный рабочий <br/>день <span>(234)</span></label> 
+ 								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_510" value="4" /><label for="check_510">Полный рабочий <br/>день <span>(436)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_519" value="5" /><label for="check_519">Доступен на короткий срок <span>(734)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_520" value="3" /><label for="check_520">Доступен на длительный срок <span>(1 234)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+							<span  class="name" data-toggle="collapse" data-target="#filtr513">Дополнительно</span>
+							<div id="filtr513" class="collapse in">
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_524" value="3" /><label for="check_524">С видео обращением <span>(87)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_525" value="4" /><label for="check_525">С отзывами <span>(2 383)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_526" value="5" /><label for="check_526">С фотографией <span>(4 563)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_527" value="3" /><label for="check_527">Резидент <span>(3 567)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_528" value="4" /><label for="check_528">Положительно к домашним животным <span>(7 549)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_529" value="5" /><label for="check_529">Есть свой транспорт <span>(23)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_530" value="3" /><label for="check_530">Есть водительское удостоверение <span>(758)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_531" value="4" /><label for="check_531">Не курящие  <span>(1 456)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr54" class=" name">Место работы</span>
+								<div id="filtr54" class="collapse in">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_06" id="check_532" value="13" /><label for="check_532">Без проживания <span>(14 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_07" id="check_533" value="14" /><label for="check_533">С проживанием <span>(8 967)</span></label> 
+									</span>
+								</div>
+						</div>
+						
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr58" class=" name">услуги</span>
+								<div id="filtr58" class="collapse in">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_25" id="check_543" value="32" /><label for="check_543">Уборка жилых комнат <span>(1 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_26" id="check_544" value="33" /><label for="check_544">Уборка ванной и санузла <span>(8 967)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_27" id="check_545" value="34" /><label for="check_545">Уборка кухни, мытьё посуды <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_28" id="check_546" value="35" /><label for="check_546">Уход за одеждой и обувью <span>(957)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_29" id="check_547" value="36" /><label for="check_547">Стирка, глажка <span>(1 234)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_27" id="check_548" value="34" /><label for="check_548">Чистка ковров <span>(357)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_28" id="check_549" value="35" /><label for="check_549">Мытье окон <span>(556)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_29" id="check_550" value="36" /><label for="check_550">Уход за цветами и растениями <span>(735)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_27" id="check_548" value="34" /><label for="check_548">Приготовление еды <span>(4 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_28" id="check_549" value="35" /><label for="check_549">Покупка продуктов <span>(2 385)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_29" id="check_550" value="36" /><label for="check_550">Уход за домашними животными <span>(1 953)</span></label> 
+									</span>
+								</div>
+						</div>
+
+					</div>
+					</form>
+				</aside>
+				<aside class="b-aside w220 b-filtr_bl" style="margin-right:4px;">
+					<form action=".">
+					<div class="b-asideblock">
+						<h2>Вакансии</h2>
+						<div class="b-find_bl">
+							<div class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-click="dropdown" data-delay="0" role="button"><span>Няни</span><span class="caret"></span></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Домработницы</a></li>
+										<li><a href="#">Сиделки</a></li>
+									</ul>
+								</div>
+								<div>
+									Москва
+									<span class="b-find_address"></span>
+								</div>
+								<div>
+									м. Университет
+									<span class="b-find_metro"></span>
+								</div>
+								<div class="b-map_bl">
+									<div class="map" id="map" data-lat="55.69144068" data-lng="37.53382003" data-zoom="14"></div>
+									<a href="#" class="button_white"><span class="ic_map">На карте</span></a>
+									<script>
+										ymaps.ready(function () {
+											var cont = $('#map');
+											var myMap = new ymaps.Map("map", {
+											  center: [cont.data('lat'), cont.data('lng')],
+											  zoom: cont.data('zoom'),
+											  type: "yandex#map",
+											  controls:[]
+											});
+										 });
+									</script>
+								</div>
+								<div class="b-my-choice">
+									<h4>Текущий выбор</h4>
+									<span><a href="#" class="ic_delete">удалить</a> Менее чем 1 км</span>
+									<span><a href="#" class="ic_delete">удалить</a> Еженедельный</span>
+									<span><a href="#" class="ic_delete">удалить</a> Без проживания</span>
+								</div>
+								<div class="b-butt_row">
+									<span><a href="#" class="ic_delete">удалить</a> Очистить все</span>
+								</div>
+
+						</div>
+					</div>
+					<div class="b-asideblock b-filters_list">
+						<div class="b-filtr">
+							<span class="name" data-toggle="collapse" data-target="#filtr1">Предложения работы</span>
+							<div id="filtr1" class="collapse in">
+								<span class="chkwrap">
+									<input type="radio" checked="checked" class="custom" name="name_01" id="radio_1" value="1" /><label for="radio_1">Все <span>(23 685)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_01" id="radio_2" value="2" /><label for="radio_2">Только новые <span>(893)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+							<span  class="name" data-toggle="collapse" data-target="#filtr2">График работы</span>
+							<div id="filtr2" class="collapse in">
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_1" value="3" /><label for="check_1">Еженедельный <span>(75)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_2" value="4" /><label for="check_2">Случайный <span>(14)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_3" value="5" /><label for="check_3">Одноразовый <span>(128)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+							<span data-toggle="collapse" data-target="#filtr3" class=" name">Удаленность</span>
+							<div id="filtr3" class="collapse in">
+								<span class="chkwrap">
+									<input type="radio" checked="checked" class="custom" name="name_05" id="radio_3" value="6" /><label for="radio_3">Менее чем 1 км. <span>(2)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_4" value="7" /><label for="radio_4">Менее чем 5 км. <span>(54)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_5" value="8" /><label for="radio_5">Менее чем 10 км. <span>(245)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_6" value="9" /><label for="radio_6">Менее чем 20 км. <span>(1 235)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio"  class="custom" name="name_05" id="radio_7" value="10" /><label for="radio_7">Менее чем 30 км. <span>(8 760)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_8" value="11" /><label for="radio_8">Менее чем 40 км. <span>(4 660)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_9" value="12" /><label for="radio_9">Менее чем 50 км. <span>(18 760)</span></label> 
+								</span>
+							</div>
+						</div>
+					
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr4" class=" name">Место работы</span>
+								<div id="filtr4" class="collapse in">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_06" id="check_4" value="13" /><label for="check_4">Без проживания <span>(14 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_07" id="check_5" value="14" /><label for="check_5">С проживанием <span>(8 967)</span></label> 
+									</span>
+								</div>
+						</div>
+						<div class="b-filtr">
+								<span  data-toggle="collapse" data-target="#filtr5" class=" name">Возрастные группы детей</span>
+								<div id="filtr5" class="collapse in">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_08" id="check_6" value="15" /><label for="check_6">0-1 год <span>(1 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_09" id="check_7" value="16" /><label for="check_7">1-3 года <span>(8 967)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_10" id="check_8" value="17" /><label for="check_8">4-6 лет <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_11" id="check_9" value="18" /><label for="check_9">7-10 лет <span>(957)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_12" id="check_10" value="19" /><label for="check_10">более 10 лет <span>(546)</span></label> 
+									</span>
+								</div>
+						</div>
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr6"  class="name">оплата</span>
+								<div id="filtr6" class="collapse in">
+									<select class="custom" name="name3" id="settings12"  tabindex="-1">
+											<option value="02">Руб/час</option>
+											<option value="01">Руб/мес</option>
+									</select>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_13" id="check_11" value="20" /><label for="check_11">По договоренности <span>(352)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_14" id="check_12" value="21" /><label for="check_12">Менее 150 <span>(1 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_15" id="check_13" value="22" /><label for="check_13">150-200 <span>(8 967)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_16" id="check_14" value="23" /><label for="check_14">200-250 <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_17" id="check_15" value="24" /><label for="check_15">250-300 <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_18" id="check_16" value="25" /><label for="check_16">300-350 <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_19" id="check_17" value="26" /><label for="check_17">350-400 <span>(957)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_20" id="check_18" value="27" /><label for="check_18">более 400 <span>(1 234)</span></label> 
+									</span>
+								</div>
+						</div>
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr7" class=" name">Кол-во детей для одновременной работы</span>
+								<div id="filtr7" class="collapse in">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_21" id="check_19" value="28" /><label for="check_19">1 <span>(1 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_22" id="check_20" value="29" /><label for="check_20">2 <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_23" id="check_21" value="30" /><label for="check_21">3 <span>(957)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_24" id="check_22" value="31" /><label for="check_22">4 и более <span>(1 234)</span></label> 
+									</span>
+								</div>
+								
+						</div>
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr8" class=" name">Дата выхода на работу</span>
+								<div id="filtr8" class="collapse in">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_25" id="check_23" value="32" /><label for="check_23">Немедленно <span>(237)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_26" id="check_24" value="33" /><label for="check_24">На этой неделе <span>(784)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_27" id="check_25" value="34" /><label for="check_25">На следующей неделе <span>(4 555)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_28" id="check_26" value="35" /><label for="check_26">В этом месяце <span>(1 484)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_29" id="check_27" value="36" /><label for="check_27">В следующем месяце <span>(3 484)</span> </label> 
+									</span>
+								</div>
+						</div>
+					</div>
+					</form>
+				</aside>
+				<aside class="b-aside w220 b-filtr_bl" style="margin-right:4px;">
+					<form action=".">
+					<div class="b-asideblock">
+						<h2>Вакансии</h2>
+						<div class="b-find_bl">
+							<div class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-click="dropdown" data-delay="0" role="button"><span>Сиделки</span><span class="caret"></span></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Няни</a></li>
+										<li><a href="#">Домработницы</a></li>
+									</ul>
+								</div>
+								<div>
+									Москва
+									<span class="b-find_address"></span>
+								</div>
+								<div>
+									м. Университет
+									<span class="b-find_metro"></span>
+								</div>
+								<div class="b-map_bl">
+									<div class="map" id="map2" data-lat="55.69144068" data-lng="37.53382003" data-zoom="14"></div>
+									<a href="#" class="button_white"><span class="ic_map">На карте</span></a>
+									<script>
+										ymaps.ready(function () {
+											var cont = $('#map2');
+											var myMap = new ymaps.Map("map2", {
+											  center: [cont.data('lat'), cont.data('lng')],
+											  zoom: cont.data('zoom'),
+											  type: "yandex#map",
+											  controls:[]
+											});
+										 });
+									</script>
+								</div>
+								<div class="b-my-choice">
+									<h4>Текущий выбор</h4>
+									<span><a href="#" class="ic_delete">удалить</a> Менее чем 1 км</span>
+									<span><a href="#" class="ic_delete">удалить</a> Еженедельный</span>
+									<span><a href="#" class="ic_delete">удалить</a> Без проживания</span>
+								</div>
+								<div class="b-butt_row">
+									<span><a href="#" class="ic_delete">удалить</a> Очистить все</span>
+								</div>
+
+						</div>
+					</div>
+					<div class="b-asideblock b-filters_list">
+						<div class="b-filtr">
+							<span class="name" data-toggle="collapse" data-target="#filtr21">Предложения работы</span>
+							<div id="filtr21" class="collapse in">
+								<span class="chkwrap">
+									<input type="radio" checked="checked" class="custom" name="name_01" id="radio_11" value="1" /><label for="radio_11">Все <span>(23 685)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_01" id="radio_12" value="2" /><label for="radio_12">Только новые <span>(893)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+							<span  class="name" data-toggle="collapse" data-target="#filtr22">График работы</span>
+							<div id="filtr22" class="collapse in">
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_11" value="3" /><label for="check_11">Еженедельный <span>(75)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_12" value="4" /><label for="check_12">Случайный <span>(14)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_13" value="5" /><label for="check_13">Одноразовый <span>(128)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+							<span data-toggle="collapse" data-target="#filtr23" class=" name">Удаленность</span>
+							<div id="filtr23" class="collapse in">
+								<span class="chkwrap">
+									<input type="radio" checked="checked" class="custom" name="name_05" id="radio_13" value="6" /><label for="radio_13">Менее чем 1 км. <span>(2)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_14" value="7" /><label for="radio_14">Менее чем 5 км. <span>(54)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_15" value="8" /><label for="radio_15">Менее чем 10 км. <span>(245)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_16" value="9" /><label for="radio_16">Менее чем 20 км. <span>(1 235)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio"  class="custom" name="name_05" id="radio_17" value="10" /><label for="radio_17">Менее чем 30 км. <span>(8 760)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_18" value="11" /><label for="radio_18">Менее чем 40 км. <span>(4 660)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_19" value="12" /><label for="radio_19">Менее чем 50 км. <span>(18 760)</span></label> 
+								</span>
+							</div>
+						</div>
+					
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr24" class=" name">Место работы</span>
+								<div id="filtr24" class="collapse in">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_06" id="check_14" value="13" /><label for="check_14">Без проживания <span>(14 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_07" id="check_15" value="14" /><label for="check_15">С проживанием <span>(8 967)</span></label> 
+									</span>
+								</div>
+						</div>
+						<div class="b-filtr">
+								<span  data-toggle="collapse" data-target="#filtr25" class=" name">Возрастные группы детей</span>
+								<div id="filtr25" class="collapse in">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_08" id="check_16" value="15" /><label for="check_16">Дети, 0-6 лет <span>(1 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_09" id="check_17" value="16" /><label for="check_17">Дети, 7-17 лет <span>(8 967)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_10" id="check_18" value="17" /><label for="check_18">Взрослые, 18-54 года <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_11" id="check_19" value="18" /><label for="check_19">Пенсионный возраст, от 55 лет <span>(546)</span></label> 
+									</span>
+								</div>
+						</div>
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr26"  class="name">оплата</span>
+								<div id="filtr26" class="collapse in">
+									<select class="custom" name="name3" id="settings12"  tabindex="-1">
+											<option value="02">Руб/час</option>
+											<option value="01">Руб/мес</option>
+									</select>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_13" id="check_111" value="20" /><label for="check_111">По договоренности <span>(352)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_14" id="check_112" value="21" /><label for="check_112">Менее 100 <span>(1 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_15" id="check_113" value="22" /><label for="check_113">100-150 <span>(8 967)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_16" id="check_114" value="23" /><label for="check_114">150-200 <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_17" id="check_115" value="24" /><label for="check_115">200-250 <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_20" id="check_118" value="27" /><label for="check_118">более 250 <span>(1 234)</span></label> 
+									</span>
+								</div>
+						</div>
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr27" class=" name">Кол-во детей для одновременной работы</span>
+								<div id="filtr27" class="collapse in">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_21" id="check_119" value="28" /><label for="check_119">1 <span>(1 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_22" id="check_120" value="29" /><label for="check_120">2 <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_23" id="check_121" value="30" /><label for="check_121">3 <span>(957)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_24" id="check_122" value="31" /><label for="check_122">4 и более <span>(1 234)</span></label> 
+									</span>
+								</div>
+								
+						</div>
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr28" class=" name">Дата выхода на работу</span>
+								<div id="filtr28" class="collapse in">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_25" id="check_123" value="32" /><label for="check_123">Немедленно <span>(237)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_26" id="check_124" value="33" /><label for="check_124">На этой неделе <span>(784)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_27" id="check_125" value="34" /><label for="check_125">На следующей неделе <span>(4 555)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_28" id="check_126" value="35" /><label for="check_126">В этом месяце <span>(1 484)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_29" id="check_127" value="36" /><label for="check_127">В следующем месяце <span>(3 484)</span> </label> 
+									</span>
+								</div>
+						</div>
+					</div>
+					</form>
+
+				</aside>
+
+				<aside class="b-aside w220 b-filtr_bl" style="margin-right:4px;">
+					<form action=".">
+					<div class="b-asideblock">
+						<h2>Вакансии</h2>
+						<div class="b-find_bl">
+							<div class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-click="dropdown" data-delay="0" role="button"><span>Домработницы</span><span class="caret"></span></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Няни</a></li>
+										<li><a href="#">Сиделки</a></li>
+									</ul>
+								</div>
+								<div>
+									Москва
+									<span class="b-find_address"></span>
+								</div>
+								<div>
+									м. Университет
+									<span class="b-find_metro"></span>
+								</div>
+								<div class="b-map_bl">
+									<div class="map" id="map1" data-lat="55.69144068" data-lng="37.53382003" data-zoom="14"></div>
+									<a href="#" class="button_white"><span class="ic_map">На карте</span></a>
+									<script>
+										ymaps.ready(function () {
+											var cont = $('#map1');
+											var myMap = new ymaps.Map("map1", {
+											  center: [cont.data('lat'), cont.data('lng')],
+											  zoom: cont.data('zoom'),
+											  type: "yandex#map",
+											  controls:[]
+											});
+										 });
+									</script>
+								</div>
+								<div class="b-my-choice">
+									<h4>Текущий выбор</h4>
+									<span><a href="#" class="ic_delete">удалить</a> Менее чем 1 км</span>
+									<span><a href="#" class="ic_delete">удалить</a> Еженедельный</span>
+									<span><a href="#" class="ic_delete">удалить</a> Без проживания</span>
+								</div>
+								<div class="b-butt_row">
+									<span><a href="#" class="ic_delete">удалить</a> Очистить все</span>
+								</div>
+
+						</div>
+					</div>
+					<div class="b-asideblock b-filters_list">
+						<div class="b-filtr">
+							<span class="name" data-toggle="collapse" data-target="#filtr11">Предложения работы</span>
+							<div id="filtr11" class="collapse in">
+								<span class="chkwrap">
+									<input type="radio" checked="checked" class="custom" name="name_01" id="radio_21" value="1" /><label for="radio_21">Все <span>(23 685)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_01" id="radio_22" value="2" /><label for="radio_22">Только новые <span>(893)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+							<span  class="name" data-toggle="collapse" data-target="#filtr12">График работы</span>
+							<div id="filtr12" class="collapse in">
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_21" value="3" /><label for="check_21">Еженедельный <span>(75)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_22" value="4" /><label for="check_22">Случайный <span>(14)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_23" value="5" /><label for="check_23">Одноразовый <span>(128)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+							<span data-toggle="collapse" data-target="#filtr13" class=" name">Удаленность</span>
+							<div id="filtr13" class="collapse in">
+								<span class="chkwrap">
+									<input type="radio" checked="checked" class="custom" name="name_05" id="radio_23" value="6" /><label for="radio_23">Менее чем 1 км. <span>(2)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_24" value="7" /><label for="radio_24">Менее чем 5 км. <span>(54)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_25" value="8" /><label for="radio_25">Менее чем 10 км. <span>(245)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_26" value="9" /><label for="radio_26">Менее чем 20 км. <span>(1 235)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio"  class="custom" name="name_05" id="radio_27" value="10" /><label for="radio_27">Менее чем 30 км. <span>(8 760)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_28" value="11" /><label for="radio_28">Менее чем 40 км. <span>(4 660)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_29" value="12" /><label for="radio_29">Менее чем 50 км. <span>(18 760)</span></label> 
+								</span>
+							</div>
+						</div>
+					
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr14" class=" name">Место работы</span>
+								<div id="filtr14" class="collapse in">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_06" id="check_24" value="13" /><label for="check_24">Без проживания <span>(14 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_07" id="check_25" value="14" /><label for="check_25">С проживанием <span>(8 967)</span></label> 
+									</span>
+								</div>
+						</div>
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr16"  class="name">оплата</span>
+								<div id="filtr16" class="collapse in">
+									<select class="custom" name="name3" id="settings12"  tabindex="-1">
+											<option value="02">Руб/выход</option>
+											<option value="01">Руб/мес</option>
+									</select>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_13" id="check_211" value="20" /><label for="check_211">По договоренности <span>(352)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_14" id="check_212" value="21" /><label for="check_212">Менее 500 <span>(1 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_15" id="check_213" value="22" /><label for="check_213">500-1000 <span>(8 967)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_16" id="check_214" value="23" /><label for="check_214">1000-1500 <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_17" id="check_215" value="24" /><label for="check_215">1500-2000 <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_18" id="check_216" value="25" /><label for="check_216">2000-2500 <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_19" id="check_217" value="26" /><label for="check_217">2500-3000 <span>(957)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_20" id="check_218" value="27" /><label for="check_218">более 3000 <span>(1 234)</span></label> 
+									</span>
+								</div>
+						</div>
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr18" class=" name">Дата выхода на работу</span>
+								<div id="filtr18" class="collapse in">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_25" id="check_223" value="32" /><label for="check_223">Немедленно <span>(237)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_26" id="check_224" value="33" /><label for="check_224">На этой неделе <span>(784)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_27" id="check_225" value="34" /><label for="check_225">На следующей неделе <span>(4 555)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_28" id="check_226" value="35" /><label for="check_226">В этом месяце <span>(1 484)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_29" id="check_227" value="36" /><label for="check_227">В следующем месяце <span>(3 484)</span> </label> 
+									</span>
+								</div>
+						</div>
+					</div>
+					</form>
+
+				</aside>
+				
+
+			</div>
+	</div>
+	<footer class="footer">
+		<div class="wrapper container-fluid">
+			 <div class="b-footer_row row">	
+					<div class="b-link col-md-6">
+							<div class="b-aboutlink">
+								 <a href="#">О нас</a>
+								 <a href="#">Связаться с нами</a>
+								 <a href="#">Помощь</a>
+								 <a href="#">Карьера</a>
+								 <a href="#">Детским центрам</a>
+							</div>
+							<div class="b-proflink ">
+								 <a href="#">Няни</a>
+								 <a href="#">Сиделки</a>
+								 <a href="#">Домработницы</a>
+								 <a href="#">Детские центры</a>
+							</div>
+					</div>
+					<div class="b-social_link col-md-6">
+							<span class="">Следите за нами в соцсетях</span>
+							<a href="#" class="link_tw" title="Twitter"></a>
+							<a href="#" class="link_fb" title="Facebook"></a>
+							<a href="#" class="link_vk" title="Vkontakte"></a>
+							<a href="#" class="link_ggl" title="Google+"></a>
+							<a href="#" class="link_odn" title="Odnoclasniki"></a>
+							<a href="#" class="link_ytb" title="Youtube"></a>
+					</div>
+			</div>
+			<div class="b-copy">© 2015 ООО «Новые сервисы». Все права защищены. Используя этот сайт, Вы соглашаетесь с нашими <a href="#">Условиями использования</a> и <a href="#">Политикой  конфиденциальности.</a></div>
+		</div>
+
+	</footer>
+
+</body>
+</html>

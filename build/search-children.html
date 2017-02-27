@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="ru"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie10 lt-ie9 lt-ie8" lang="ru"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie10 lt-ie9" lang="ru"> <![endif]-->
+<!--[if IE 9]>    <html class="lt-ie10" lang="ru"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="ru">
+	<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sitterland</title>
+    <link rel="stylesheet" href="css/style.css"/>
+
+	<script type="text/javascript" src="js/libs.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+	
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+	<div class="homepage">
+			<header id="header" class="header">	
+				<div class="wrapper clearfix">
+					<div class="logo">
+						<a href="#"><img src="./icons/logo.png" alt="Sitterland"></a>
+						<span class="slogan">Выбирая лучших!</span>
+					</div>
+						<nav class="b-profile_nav">
+							<ul class="b-menu">
+								<li class="menuitem"><a href="#">Сообщения <span class="num">12</span></a></li>
+								<li class="menuitem"><a href="#">Отклики</a></li>
+								<li class="menuitem"><a href="#">поиск работников</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-click="dropdown" data-delay="0" role="button"><span class="ic_user">Костантин К.</span><span class="caret"></span></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Профиль</a></li>
+										<li><a href="#">Помощь</a></li>
+										<li><a href="#">Выход</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+				</div>
+			</header>
+		 	<div class="b-container wrapper clearfix">
+				<div class="b-cabinet clearfix">
+					<ol class="breadcrumb">
+						<li><a href="#">Мой профиль</a></li>
+						<li><a href="#">Детские центры</a></li>
+						<li class="active"><span>Детские центры в Москве</span></li>
+					</ol>
+				</div>
+				
+				<aside class="b-aside w220 b-filtr_bl">
+					<form action=".">
+					<div class="b-asideblock">
+						<h2>Детские центры</h2>
+						<div class="b-find_bl">
+								<div>
+									Москва
+									<span class="b-find_address"></span>
+								</div>
+								<div>
+									м. Университет
+									<span class="b-find_metro"></span>
+								</div>
+								<div class="b-map_bl">
+									<div class="map" id="map" data-lat="55.69144068" data-lng="37.53382003" data-zoom="14"></div>
+									<a href="#" class="button_white"><span class="ic_map">На карте</span></a>
+									<script>
+										ymaps.ready(function () {
+											var cont = $('#map');
+											var myMap = new ymaps.Map("map", {
+											  center: [cont.data('lat'), cont.data('lng')],
+											  zoom: cont.data('zoom'),
+											  type: "yandex#map",
+											  controls:[]
+											});
+										 });
+									</script>
+								</div>
+								<div class="b-my-choice">
+									<h4>Текущий выбор</h4>
+									<span><a href="#" class="ic_delete">удалить</a> Менее чем 1 км</span>
+									<span><a href="#" class="ic_delete">удалить</a> Еженедельный</span>
+									<span><a href="#" class="ic_delete">удалить</a> Без проживания</span>
+								</div>
+								<div class="b-butt_row">
+									<span><a href="#" class="ic_delete">удалить</a> Очистить все</span>
+								</div>
+
+						</div>
+					</div>
+					<div class="b-asideblock b-filters_list">
+						
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr36"  class="name collapsed">оплата, руб/мес</span>
+								<div id="filtr36" class="collapse">
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_14" id="check_312" value="21" /><label for="check_312">Менее 10 000 <span>(4)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_15" id="check_313" value="22" /><label for="check_313">10 000 - 20 000 <span>(113)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_16" id="check_314" value="23" /><label for="check_314">20 000 - 30 000 <span>(98)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_17" id="check_315" value="24" /><label for="check_315">30 000 - 40 000 <span>(2 387)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_18" id="check_316" value="25" /><label for="check_316">40 000 - 50 000 <span>(156)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_19" id="check_317" value="26" /><label for="check_317">свыше 50 000 <span>(12)</span></label> 
+									</span>
+								</div>
+						</div>
+						<div class="b-filtr">
+							<span data-toggle="collapse" data-target="#filtr33" class="collapsed name">Удаленность</span>
+							<div id="filtr33" class="collapse">
+								<span class="chkwrap">
+									<input type="radio" checked="checked" class="custom" name="name_05" id="radio_33" value="6" /><label for="radio_33">Менее чем 1 км. <span>(2)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_34" value="7" /><label for="radio_34">Менее чем 5 км. <span>(54)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_35" value="8" /><label for="radio_35">Менее чем 10 км. <span>(245)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_36" value="9" /><label for="radio_36">Менее чем 20 км. <span>(1 235)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio"  class="custom" name="name_05" id="radio_37" value="10" /><label for="radio_37">Менее чем 30 км. <span>(8 760)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_38" value="11" /><label for="radio_38">Менее чем 40 км. <span>(4 660)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="radio" class="custom" name="name_05" id="radio_39" value="12" /><label for="radio_39">Менее чем 50 км. <span>(18 760)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+							<span  class="name collapse" data-toggle="collapse" data-target="#filtr311">Форма пребывания</span>
+							<div id="filtr311" class="collapse">
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_39" value="3" /><label for="check_39">Кратковременное пребывание <span>(4 555)</span></label> 
+ 								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_310" value="4" /><label for="check_310">Занятия по расписанию <span>(455)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_319" value="5" /><label for="check_319">Целый день <span>(290)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+							<span  class="name" data-toggle="collapse" data-target="#filtr32">Программы по возрасту</span>
+							<div id="filtr32" class="collapse in">
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_31" value="3" /><label for="check_31">Для беременных <span>(4 555)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_32" value="4" /><label for="check_32">0-1 года <span>(455)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_33" value="5" /><label for="check_33">1-2 года <span>(290)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_31" value="3" /><label for="check_31">2-3 года <span>(14)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_32" value="4" /><label for="check_32">3-4 года <span>(2)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_33" value="5" /><label for="check_33">4-5 года <span>(30)</span></label> 
+								</span>
+								<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_08" id="check_334" value="15" /><label for="check_334">5-6 года <span>(346)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_09" id="check_335" value="16" /><label for="check_335">6-7 года <span>(880)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_10" id="check_336" value="17" /><label for="check_336">7 и боле лет <span>(1 234)</span></label> 
+									</span>
+									
+							</div>
+						</div>
+						<div class="b-filtr">
+							<span  class="name collapse" data-toggle="collapse" data-target="#filtr312">Кол-во детей в группах</span>
+							<div id="filtr312" class="collapse">
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_321" value="3" /><label for="check_321">Менне 5 <span>(4 555)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_322" value="4" /><label for="check_3222">От 5 до 10 <span>(455)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_323" value="5" /><label for="check_323">Более 10 <span>(290)</span></label> 
+								</span>
+							</div>
+						</div>
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr37" class="collapsed name">Комната отдыха родителей	</span>
+								<div id="filtr37" class="collapse">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_21" id="check_339" value="28" /><label for="check_339">Не важно</label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_22" id="check_340" value="29" /><label for="check_340">Есть</label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_23" id="check_341" value="30" /><label for="check_341">Нет</label> 
+									</span>
+								</div>
+								
+						</div>
+						<div class="b-filtr">
+							<span  class="name collapse" data-toggle="collapse" data-target="#filtr313">Методики и системы развития</span>
+							<div id="filtr313" class="collapse">
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_324" value="3" /><label for="check_324">Традиционные методики <span>(4 555)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_325" value="4" /><label for="check_325">Авторские методики <span>(455)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_326" value="5" /><label for="check_326">Мария Монтессори <span>(290)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_327" value="3" /><label for="check_327">Методика Николая Зайцева <span>(34)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_328" value="4" /><label for="check_328">Методика Никитиных <span>(1)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_329" value="5" /><label for="check_329">Методика Глена Домана <span>(6)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_330" value="3" /><label for="check_330">Методика Екатерины Железновой <span>(17)</span></label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_331" value="4" /><label for="check_331">Методика Сесиль Лупан <span>(123)</span></label> 
+								</span>
+								<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_06" id="check_332" value="13" /><label for="check_332">Валдорфская педагогика <span>(1)</span></label> 
+									</span>
+									
+							</div>
+						</div>
+						
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr34" class="collapsed name">Интеллектуальное развитие</span>
+								<div id="filtr34" class="collapse">
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_07" id="check_333" value="14" /><label for="check_333">Развивающие занятия <span>(4 555)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_25" id="check_343" value="32" /><label for="check_343">Математика и логика <span>(45)</span></label> 
+									</span>
+								</div>
+						</div>
+						
+						
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr38" class="collapsed name">Творческое развитие</span>
+								<div id="filtr38" class="collapse">
+									
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_26" id="check_344" value="33" /><label for="check_344">Занятия музыкой, пение <span>(96)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_27" id="check_345" value="34" /><label for="check_345">Изобразительное искусство, эстетика <span>(156)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_28" id="check_346" value="35" /><label for="check_346">Театральный кружок <span>(11)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_29" id="check_347" value="36" /><label for="check_347">Поделки, лепка <span>(2 456)</span></label> 
+									</span>
+								</div>
+						</div>
+						<div class="b-filtr">
+							<span  class="name" data-toggle="collapse" data-target="#filtr39">Физическое развитие</span>
+							<div id="filtr39" class="collapse in">
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_34" value="3" /><label for="check_34">Танцы</label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_03" id="check_34" value="4" /><label for="check_34">Ритмика</label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" class="custom" name="name_04" id="check_36" value="5" /><label for="check_36">Йога</label> 
+								</span>
+								<span class="chkwrap">
+									<input type="checkbox" checked="checked" class="custom" name="name_02" id="check_37" value="3" /><label for="check_37">Спортивные занятия</label> 
+								</span>
+								
+							</div>
+						</div>
+						<div class="b-filtr">
+								<span data-toggle="collapse" data-target="#filtr310" class="collapsed name">иностранные Языки</span>
+								<div id="filtr310" class="collapse">
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_25" id="check_351" value="32" /><label for="check_351">Английский <span>(1 567)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_26" id="check_352" value="33" /><label for="check_352">Испанский <span>(8 967)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_27" id="check_353" value="34" /><label for="check_353">Немецкий <span>(2 123)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" class="custom" name="name_28" id="check_354" value="35" /><label for="check_354">Французский <span>(957)</span></label> 
+									</span>
+									<span class="chkwrap">
+										<input type="checkbox" checked="checked" class="custom" name="name_29" id="check_355" value="36" /><label for="check_355">Другие <span>(1 234)</span></label> 
+									</span>
+								</div>
+						</div>
+						
+					</div>
+					</form>
+				</aside>
+				<section class="b-inner_cabinet w700">
+					  <div class="title_in">Найдено <b>3 478</b> предложений
+						<div class="b-sort">
+							<span>Сортировать по</span>
+							<div class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-click="dropdown" data-delay="0" role="button"><span>дате обновления</span><span class="caret"></span></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">рейтингу</a></li>
+										<li><a href="#">удалённости</a></li>
+									</ul>
+							</div>
+						</div>
+					  </div>
+					  <div class="b-search_list">
+						  <div class="b-fav">
+							<div class="b-profile">
+								<div class="b-avatar">
+									<img src="./images/pic_09.jpg" alt="">
+								</div>
+								<div class="b-info">	  	
+									<div class="b-rating_profile"><span class="b-rating"><span class="stars" style="width:80%"></span></span> (Отзывов: 5)</div>
+									<h2><span>ДЕтский центр</span><a href="#">В мире счастья</a></h2>
+									<p>год основания: <b>2002</b>&nbsp;<span class="b-color_grey">|</span>&nbsp;<span class="b-cgrey">Обновлено: 14.10.14</span></p>	
+									 <p>Менее <b>2км</b> ( <span class="ic_address">Москва,</span> <span class="ic_metro">Университет</span>)&nbsp;<span class="b-color_grey">|</span>&nbsp;Оплата: <b>25 000-30 000</b> р./мес</p>
+								</div>
+							</div>
+								<div class="b-but clearfix">
+									<p>Опыт работы с детьми дошкольного и младшего школьного возраста: провожала и встречала со школы 10-летнюю девочку, помогала делать уроки, занималась английским, гуляла. <a href="#" class="more"><span>Далее</span></a></p> 
+									<a href="#" class="button"><span class="ic_user">Показать</span></a>
+								</div>
+						  </div>
+						   <div class="b-fav">
+							<div class="b-profile">
+								<div class="b-avatar">
+									<img src="./images/pic_10.jpg" alt="">
+								</div>
+								<div class="b-info">	  	
+									<h2><span>ДЕтский центр</span><a href="#">В море детства</a></h2>
+									<p>год основания: <b>2010</b>&nbsp;<span class="b-color_grey">|</span>&nbsp;<span class="b-cgrey">Обновлено: 14.10.14</span></p>	
+									 <p>Менее <b>2км</b> ( <span class="ic_address">Москва,</span> <span class="ic_metro">Университет</span>)&nbsp;<span class="b-color_grey">|</span>&nbsp;Оплата: <b>30 0000-50 000</b> р./мес</p>
+								</div>
+							</div>
+								<div class="b-but clearfix">
+									<p>С удовольствием заберу Вашего ребенка из школы, отведу в секцию, накормлю обедом, полдником, ужином, организую … <a href="#" class="more"><span>Далее</span></a></p> 
+									<a href="#" class="button"><span class="ic_user">Показать</span></a>
+								</div>
+						  </div>
+						   <div class="b-fav">
+							<div class="b-profile">
+								<div class="b-avatar">
+									<img src="./images/pic_11.jpg" alt="">
+								</div>
+								<div class="b-info">	  	
+									<div class="b-rating_profile"><span class="b-rating"><span class="stars" style="width:80%"></span></span> (Отзывов:54)</div>
+									<h2><span>ДЕтский центр</span><a href="#">В поиске клада</a></h2>
+									<p>год основания: <b>1998</b>&nbsp;<span class="b-color_grey">|</span>&nbsp;<span class="b-cgrey">Обновлено: 14.10.14</span></p>	
+									 <p>Менее <b>4км</b> ( <span class="ic_address">Москва,</span> <span class="ic_metro">Пр. Вернадского</span>)&nbsp;<span class="b-color_grey">|</span>&nbsp;Оплата: <b>25 000-30 000</b> р./мес</p>
+								</div>
+							</div>
+								<div class="b-but clearfix">
+									<p>Есть хорошие рекомендации. Имею опыт работы няней в московских семьях более 13-х лет. Работала с грудничками Есть хорошие рекомендации. Имею опыт работы няней в московских семьях более 13-х лет… <a href="#" class="more"><span>Далее</span></a></p> 
+									<a href="#" class="button"><span class="ic_user">Показать</span></a>
+								</div>
+						  </div>
+						   <div class="b-fav">
+							<div class="b-profile">
+								<div class="b-avatar">
+									<img src="./images/pic_12.jpg" alt="">
+								</div>
+								<div class="b-info">	  	
+									<div class="b-rating_profile"><span class="b-rating"><span class="stars" style="width:80%"></span></span> (Отзывов: 5)</div>
+									<h2><span>ДЕтский центр</span><a href="#">Забыла как зовут</a></h2>
+									<p>год основания: <b>2014</b>&nbsp;<span class="b-color_grey">|</span>&nbsp;<span class="b-cgrey">Обновлено: 14.10.14</span></p>	
+									 <p>Менее <b>6км</b> ( <span class="ic_address">Москва,</span> <span class="ic_metro">Университет</span>)&nbsp;<span class="b-color_grey">|</span>&nbsp;Оплата: <b>30 000-40 000</b> р./мес</p>
+								</div>
+							</div>
+								<div class="b-but clearfix">
+									<p>Люблю детей и умею находить с ними контакт. Работала с детьми от 2-х до 10-ти лет. Имею опыт в подготовке. Люблю детей и умею находить с ними контакт. Работала с детьми от 2-х до 10-ти лет. Имею опыт в подготовке... <a href="#" class="more"><span>Далее</span></a></p> 
+									<a href="#" class="button"><span class="ic_user">Показать</span></a>
+								</div>
+						  </div>
+
+					  </div>
+						<ul class="pagination">
+						  <li class="b-prev disable"><a href="#">Предыдущая</a></li>
+						  <li class="active"><a href="#">1</a></li>
+						  <li><a href="#">2</a></li>
+						  <li><a href="#">3</a></li>
+						  <li><a href="#">4</a></li>
+						  <li><a href="#">5</a></li>
+						  <li><a href="#">6</a></li>
+						  <li><a href="#">7</a></li>
+						  <li><a href="#">8</a></li>
+						  <li><a href="#">9</a></li>
+						  <li><a href="#">...</a></li>
+						  <li><a href="#">35</a></li>
+						  <li><a href="#">36</a></li>
+						  <li><a href="#">37</a></li>
+						  <li class="b-next"><a href="#">Следующая</a></li>
+						</ul>
+
+				</section>
+				
+			</div>
+	</div>
+	<footer class="footer">
+		<div class="wrapper container-fluid">
+			 <div class="b-footer_row row">	
+					<div class="b-link col-md-6">
+							<div class="b-aboutlink">
+								 <a href="#">О нас</a>
+								 <a href="#">Связаться с нами</a>
+								 <a href="#">Помощь</a>
+								 <a href="#">Карьера</a>
+								 <a href="#">Детским центрам</a>
+							</div>
+							<div class="b-proflink ">
+								 <a href="#">Няни</a>
+								 <a href="#">Сиделки</a>
+								 <a href="#">Домработницы</a>
+								 <a href="#">Детские центры</a>
+							</div>
+					</div>
+					<div class="b-social_link col-md-6">
+							<span class="">Следите за нами в соцсетях</span>
+							<a href="#" class="link_tw" title="Twitter"></a>
+							<a href="#" class="link_fb" title="Facebook"></a>
+							<a href="#" class="link_vk" title="Vkontakte"></a>
+							<a href="#" class="link_ggl" title="Google+"></a>
+							<a href="#" class="link_odn" title="Odnoclasniki"></a>
+							<a href="#" class="link_ytb" title="Youtube"></a>
+					</div>
+			</div>
+			<div class="b-copy">© 2015 ООО «Новые сервисы». Все права защищены. Используя этот сайт, Вы соглашаетесь с нашими <a href="#">Условиями использования</a> и <a href="#">Политикой  конфиденциальности.</a></div>
+		</div>
+
+	</footer>
+
+</body>
+</html>

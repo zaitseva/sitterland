@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="ru"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie10 lt-ie9 lt-ie8" lang="ru"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie10 lt-ie9" lang="ru"> <![endif]-->
+<!--[if IE 9]>    <html class="lt-ie10" lang="ru"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="ru">
+	<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sitterland</title>
+    <link rel="stylesheet" href="css/style.css"/>
+
+	<script type="text/javascript" src="js/libs.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+	
+</head>
+<body>
+	<div class="homepage">
+			<header id="header" class="header">	
+				<div class="wrapper clearfix">
+					<div class="logo">
+						<a href="#"><img src="./icons/logo.png" alt="Sitterland"></a>
+						<span class="slogan">Выбирая лучших!</span>
+					</div>
+				</div>
+			</header>
+		 	<div class="b-container wrapper clearfix">
+					<ol class="breadcrumb">
+						<li><a href="#">Главная</a></li>
+						<li><span>Регистрация работника</span></li>
+						<li class="active"><span>Основная информация</span></li>
+					</ol>
+				<section class="b-content clearfix b-reg_content">
+					<div class="b-steps_reg w220">
+						<a href="#" class="reg_link_other">Кликните здесь, <br/>если Вы наниматель</a>
+						<div class="b-step active">
+							<a href="#" class="name">Основная информация</a>
+							<p><em>Заполните основную информацию учётной записи чтобы начать работу с сервисом.</em></p>
+						</div>
+						<div class="b-step"><span class="name">ИНФОРМАЦИЯ ПРОФИЛЯ</span></div>
+						<div class="b-step"><span class="name">БИО, ФОТО И ВИДЕО</span></div>
+					</div>
+					<div class="b-reform">
+						<h1>Регистрация работника</h1>
+						<form action="#" data-ajax="true" class="b-form" method="POST">
+							<h2>Общая информация</h2>
+							<div class="fieldrow">
+								<div class="fieldcell">
+									<label for="settings05">Имя</label>
+									<div class="field validate form-group">
+										<input type="text" class="input form-control form-control" name="name" maxlength="30" id="settings05"  placeholder="Имя" value="" required />
+									</div>
+								</div>	
+								<div class="fieldcell">
+									<label for="settings06">Фамилия</label>
+									<div class="field validate form-group">
+										<input type="text" class="input form-control" name="surname" maxlength="30" id="settings06"  placeholder="Фамилия" value=""  />
+									</div>
+								</div>
+							</div> 
+							
+							<div class="fieldrow">
+								<div class="fieldcell iblock">
+									<label for="settings10">Дата рождения:</label>
+									<div class="field seldate validate form-group">
+										<input type="hidden" name="birthdate" id="settings088" value=""  class="realseldate">
+										<select class="custom form-control sel_day" name="name1" id="settings10" tabindex="-1" data-placeholder="ДД">
+											<option></option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+											<option value="13">13</option>
+											<option value="14">14</option>
+											<option value="15">15</option>
+											<option value="16">16</option>
+											<option value="17">17</option>
+											<option value="18">18</option>
+											<option value="19">19</option>
+											<option value="20">20</option>
+											<option value="21">21</option>
+											<option value="22">22</option>
+											<option value="23">23</option>
+											<option value="24">24</option>
+											<option value="25">25</option>
+											<option value="26">26</option>
+											<option value="27">27</option>
+											<option value="28">28</option>
+											<option value="29">29</option>
+											<option value="30">30</option>
+											<option value="31">31</option>
+										</select>
+										<select class="custom form-control sel_month" tabindex="-1" name="name2" id="settings10_01"  data-placeholder="Месяц">
+											<option></option>
+											<option value="1">январь</option>
+											<option value="2">февраль</option>
+											<option value="3">март</option>
+											<option value="4">апрель</option>
+											<option value="5">май</option>
+											<option value="6">июнь</option>
+											<option value="7">июль</option>
+											<option value="8">август</option>
+											<option value="9">сентябрь</option>
+											<option value="10">октябрь</option>
+											<option value="11">ноябрь</option>
+											<option value="12">декабрь</option>
+										</select>
+										<select class="custom form-control sel_year" tabindex="-1" name="name3" id="settings10_02" data-placeholder="ГГГГ">
+											<option></option>
+											<option value="2015">2015</option>
+											<option value="2014">2014</option>
+											<option value="2013">2013</option>
+											<option value="2012">2012</option>
+											<option value="2011">2011</option>
+											<option value="2010">2010</option>
+											<option value="2009">2009</option>
+											<option value="2008">2008</option>
+											<option value="2007">2007</option>
+											<option value="2006">2006</option>
+											<option value="2005">2005</option>
+											<option value="2004">2004</option>
+											<option value="2003">2003</option>
+											<option value="2002">2002</option>
+											<option value="2001">2001</option>
+											<option value="2000">2000</option>
+											<option value="1999">1999</option>
+										</select></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="fieldrow">
+								<div class="fieldcell">
+									<label>Пол</label>
+									<div class="field">
+										<span class="chkwrap">
+											<input type="radio" checked="checked" class="custom" name="name_01" id="radio_12" value="2" /><label for="radio_12">Женский</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="radio" class="custom" name="name_01" id="radio_13" value="3" /><label for="radio_13">Мужской</label> 
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="fieldrow">
+								<div class="fieldcell">
+									<label for="settings12">Гражданство</label>
+									<div class="field validate form-group">
+										<input type="text" class="input form-control" autocomplete="on" data-path="country_autocomplete.json" name="grajdanstvo" maxlength="30" id="settings12"  placeholder="Гражданство" value=""  />
+										
+									</div>
+								</div>	
+								<div class="fieldcell">
+									<label for="settings11">Национальность</label>
+									<div class="field validate form-group">
+										<input type="text" class="input form-control" name="nationly" maxlength="30" id="settings11"  placeholder="Национальность" value=""  />
+									</div>
+								</div>
+							</div>
+							<div class="fieldrow">
+								<div class="fieldcell">
+									<label>Разрешение на работу</label>
+									<div class="field">
+										<span class="chkwrap">
+											<input type="radio" checked="checked" class="custom" name="name_02" id="radio_10" value="4" /><label for="radio_10">Да</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="radio" class="custom" name="name_02" id="radio_11" value="5" /><label for="radio_11">Нет</label> 
+										</span>
+
+									</div>
+								</div>
+							</div>
+							<div class="fieldrow">
+								<div class="fieldcell">
+									<label for="settings07">ГороД</label>
+									<div class="field validate form-group">
+										<input type="text" class="input form-control" name="city" maxlength="30" id="settings07"  placeholder="Город" value=""  />
+									</div>
+								</div>	
+								<div class="fieldcell">
+									<label for="settings08">Метро</label>
+									<div class="field validate form-group">
+										<input type="text" class="input form-control" name="metro" maxlength="30" id="settings08"  placeholder="Станция метро" value=""  />
+									</div>
+								</div>
+							</div>
+							<div class="fieldrow">
+								<div class="fieldcell w460">
+									<label for="settings09">Адрес фактического места жительства<span class="hint" data-toggle="tooltip" data-placement="right" title="Какой-то текст, объяснющий, что это за хрень">?</span></label>
+									<div class="field validate form-group">
+										<input type="text" class="input form-control" name="address" maxlength="30" id="settings09"  placeholder="Улица, номер дома (строение/корпус)" value=""  />
+									</div>
+								</div>
+							</div> 
+							<h2>Контактная информация</h2>
+							<div class="fieldrow">
+								<div class="fieldcell w460">
+									<label for="settings01">Адрес электронной почты (имя пользователя)<span class="hint" data-toggle="tooltip" data-placement="right" title="Какой-то текст, объяснющий, что это за хрень">?</span></label>
+									<div class="field validate form-group">
+										<input type="email" class="input form-control" name="email" maxlength="30" id="settings01"  placeholder="Адрес электронной почты" value=""  />
+									</div>
+								</div>
+							</div> 
+							<div class="fieldrow">
+								<div class="fieldcell">
+									<label for="settings02">Пароль</label>
+									<div class="field validate form-group">
+										<input type="password" class="input form-control" name="password" maxlength="100" id="settings02" placeholder="Пароль" value=""  />
+									</div>
+								</div>
+								<div class="fieldcell">
+									<label>&nbsp;</label>
+									<div class="field validate form-group">
+										<input type="password" class="input form-control" name="passwordre" maxlength="100" id="settings03" placeholder="Повторите пароль" value=""  />
+									</div>
+								</div>
+							</div>
+							<div class="fieldrow">
+								<div class="fieldcell">
+									<label for="settings04">Телефон</label>
+									<div class="field validate form-group">
+										<input type="text" class="input form-control phone_mask" name="phone" maxlength="100" id="settings04" placeholder="Телефон +7 (ХХХ) ХХХ-ХХ-ХХ" value=""  />
+									</div>
+								</div>
+							</div>
+							 <div class="fieldrow">
+								<div class="fieldcell w460">
+									<label for="settings13">уведомление о новых предложениях о работе по e-mail</label>
+									<p class="note">Вы можете отказаться в любое время</p>
+									<div class="field validate form-group">
+										<select class="custom form-control" tabindex="-1" name="name3" id="settings13">
+											<option value="01">Не получать</option>
+											<option value="02" selected>Получать</option>
+										</select>
+									</div>
+								</div>	
+							</div>
+							<div class="fieldrow">
+								<div class="fieldcell w460">
+									<label>Интересны предложения работы от кадровых агентств?</label>
+									<p class="note">Вы можете отказаться в любое время</p>
+									<div class="field">
+										<span class="chkwrap">
+											<input type="radio" checked="checked" class="custom" name="name_03" id="radio_8" value="6" /><label for="radio_8">Да</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="radio" class="custom" name="name_03" id="radio_9" value="7" /><label for="radio_9">Нет</label> 
+										</span>
+
+									</div>
+								</div>
+							</div>
+							<h2>Дополнительная информация</h2>
+							<div class="fieldrow">
+								<div class="fieldcell w460">
+									<label for="settings14">Образование</label>
+									<div class="field validate form-group">
+										<select class="custom form-control sel_scroll" tabindex="-1" name="name3" id="settings14" data-placeholder="Образование">
+											<option></option>
+											<option value="01">Среднее</option>
+											<option value="02">Студент</option>
+											<option value="03">Среднее специальное</option>
+											<option value="04">Не оконченное высшее</option>
+											<option value="05">Высшее</option>
+											<option value="06">Высшее медицинское</option>
+											<option value="07">Высшее педагогическое</option>
+											<option value="08">Среднее специальное медицинское</option>
+											<option value="09">Среднее специальное педагогическое</option>
+										</select>
+									</div>
+								</div>	
+							</div>
+							<div class="fieldrow">
+								<div class="fieldcell w460">
+									<label>Владение иностранными языками</label>
+									<div class="field validate langsblock form-group">
+										<!-- для добавления в html-коде должен быть как-минимум один целый блок .onephone -->
+										<span class="onelang">
+											<input type="text" class="input form-control" name="lang[2]" maxlength="100" id="lang[2]" placeholder="Введите еще один язык" value="" />		   
+											<span class="text hidden"></span>
+											<a href="#lang[2]" class="del hidden"></a>
+										</span>
+										<span class="onelang">
+											<input type="text" class="input form-control hidden" name="lang[1]" maxlength="100" id="lang[1]" placeholder="Введите еще один язык" value="Английский" />	
+											<span class="text">Английский</span>	
+											<a href="#lang[1]" class="del"></a>
+										</span>
+										<span class="onelang">
+											<input type="text" class="input form-control hidden" name="lang[0]" maxlength="100" id="lang[0]" placeholder="Введите еще один язык" value="Французский" />	
+											<span class="text">Французский</span>	
+											<a href="#lang[0]" class="del"></a>
+										</span>	  
+										<a href="#" id="addlang" class="addlang"></a>
+									</div>
+								</div>
+							</div>
+							<div class="fieldrow">
+								<div class="fieldcell">
+									<label>Курите ли вы?</label>
+									<div class="field">
+										<span class="chkwrap">
+											<input type="radio"class="custom" name="name_04" id="radio_7" value="8" /><label for="radio_7">Да</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="radio"  checked="checked" class="custom" name="name_04" id="radio_6" value="9" /><label for="radio_6">Нет</label> 
+										</span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="fieldrow">
+								<div class="fieldcell">
+									<label>Есть водительское удостоверение</label>
+									<div class="field">
+										<span class="chkwrap">
+											<input type="radio"  class="custom" name="name_05" id="radio_5" value="10" /><label for="radio_5">Да</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="radio" checked="checked"class="custom" name="name_05" id="radio_4" value="11" /><label for="radio_4">Нет</label> 
+										</span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="fieldrow">
+								<div class="fieldcell">
+									<label>Есть собственный автомобиль</label>
+									<div class="field">
+										<span class="chkwrap">
+											<input type="radio" class="custom" name="name_06" id="radio_2" value="12" /><label for="radio_2">Да</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="radio" checked="checked" class="custom" name="name_06" id="radio_3" value="13" /><label for="radio_3">Нет</label> 
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="fieldrow">
+								<div class="fieldcell w460">
+									<label for="settings15">Отношение к домашним животным</label>
+									<div class="field validate form-group">
+										<select class="custom form-control" tabindex="-1" name="name3" id="settings15">
+											<option value="01">Отрицательное</option>
+											<option value="02">Положительное</option>	
+											<option selected value="03">Нейтральное</option>
+										</select>
+									</div>
+								</div>	
+							</div>
+							<div class="buttonrow">			
+									<div class="field">
+										<span class="chkwrap">
+											<input type="checkbox" class="custom agreebox" name="name" checked="checked" id="checkbox_2" value="2" /><label for="checkbox_2">Я прочитал и согласен с <a href="#">условиями использования</a> и <a href="#">политикой конфиденциальности</a></label> 
+										</span>
+									</div>
+									<div class="field nowrap">
+											<button type="submit" value="1" class="button">Сохранить и продолжить</button>
+									</div>
+							</div>
+						</form>
+					</div>
+				</section>
+			</div>
+	</div>
+	<footer class="footer">
+		<div class="wrapper container-fluid">
+			 <div class="b-footer_row row">	
+					<div class="b-link col-md-6">
+							<div class="b-aboutlink">
+								 <a href="#">О нас</a>
+								 <a href="#">Связаться с нами</a>
+								 <a href="#">Помощь</a>
+								 <a href="#">Карьера</a>
+								 <a href="#">Детским центрам</a>
+							</div>
+							<div class="b-proflink ">
+								 <a href="#">Няни</a>
+								 <a href="#">Сиделки</a>
+								 <a href="#">Домработницы</a>
+								 <a href="#">Детские центры</a>
+							</div>
+					</div>
+					<div class="b-social_link col-md-6">
+							<span class="">Следите за нами в соцсетях</span>
+							<a href="#" class="link_tw" title="Twitter"></a>
+							<a href="#" class="link_fb" title="Facebook"></a>
+							<a href="#" class="link_vk" title="Vkontakte"></a>
+							<a href="#" class="link_ggl" title="Google+"></a>
+							<a href="#" class="link_odn" title="Odnoclasniki"></a>
+							<a href="#" class="link_ytb" title="Youtube"></a>
+					</div>
+			</div>
+			<div class="b-copy">© 2015 ООО «Новые сервисы». Все права защищены. Используя этот сайт, Вы соглашаетесь с нашими <a href="#">Условиями использования</a> и <a href="#">Политикой  конфиденциальности.</a></div>
+		</div>
+
+	</footer>
+
+</body>
+</html>

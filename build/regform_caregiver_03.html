@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="ru"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie10 lt-ie9 lt-ie8" lang="ru"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie10 lt-ie9" lang="ru"> <![endif]-->
+<!--[if IE 9]>    <html class="lt-ie10" lang="ru"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="ru">
+	<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sitterland</title>
+    <link rel="stylesheet" href="css/style.css"/>
+
+	<script type="text/javascript" src="js/libs.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body>
+	<div class="homepage">
+			<header id="header" class="header">	
+				<div class="wrapper clearfix">
+					<div class="logo">
+						<a href="#"><img src="./icons/logo.png" alt="Sitterland"></a>
+						<span class="slogan">Выбирая лучших!</span>
+					</div>
+				</div>
+			</header>
+		 	<div class="b-container wrapper clearfix">
+					<ol class="breadcrumb">
+						<li><a href="#">Главная</a></li>
+						<li><span>Регистрация работника</span></li>
+						<li class="active"><span>Био, фото и видео</span></li>
+					</ol>
+					
+					
+				<section class="b-content clearfix b-reg_content">
+					<div class="b-steps_reg w220">
+						<div class="b-step ok">
+							<a href="#" class="name">Основная информация</a>
+							<p><em>Заполните основную информацию учётной записи чтобы начать работу с сервисом.</em></p>
+						</div>
+						<div class="b-step ok">
+							<a href="#" class="name">ИНФОРМАЦИЯ ПРОФИЛЯ</a>
+							<p><em>Выберите тип, добавьте дополнительные услуги, а также заполните ваш график доступности.</em></p>
+						</div>
+						<div class="b-step active"><a class="name">БИО, ФОТО И ВИДЕО</a></div>
+					</div>
+					<div class="b-reform" role="tabpanel">
+						<h1>Регистрация работника</h1>
+						<h2>Биография, фотография профиля и видеообращение</h2>
+						<form action="#" class="b-form">
+							 <div class="fieldrow">
+								<div class="fieldcell w460">
+									<label>О себе</label>
+									<div class="field validate">
+										<textarea name="about" cols="5" rows="7" class="textarea" maxlength="2000"></textarea>										
+									</div>
+								</div>
+								 <div class="fieldcell">
+									<label>&nbsp;</label>
+									<p><em>Опишите свою биографию (образование, опыт, навыки, увлечения, качества и т.д.)</em><span class="num">0</span><em>Минимум 150 символов, максимум 2000 символов</em></p>
+ 								 
+								</div>
+							</div>
+							<div class="fieldrow file">
+									<div class="fieldcell">
+										<label>Управление Вашей фотографией</label>
+										<div class="field photofile">
+											<span class="hint" data-toggle="tooltip" data-placement="right" title="Какой-то текст, объяснющий, что это за хрень">?</span>
+											<div class="image"><img src="images/avatar.png" alt=""/></div>
+											<span class="b-upload"><input type="file" class="input" name="name" id="settings25"/>
+											<a href="#" class="button_white upload"><span>Загрузите с компьютера</span></a></span>
+										</div>	
+									</div>
+									<div class="fieldcell">
+										<label>&nbsp;</label>
+										<p><em>Используйте фотографию где Ваше лицо отчетливо видно.</em></p>
+										<p><em>Если ваша фотография содержит детей, нажав Сохранить Вы подтверждаете, что являетесь законным опекуном или имеете разрешение на использование этой фотографии.</em></p>
+									</div>
+							</div>	
+							<div class="fieldrow file">
+								<div class="fieldcell">
+									<label>Управление Вашим видео-обращением</label>
+									<p><em>Добавьте своё видео-обращение следуя нашим рекомендациям. Это отличная возможность показать какой Вы хороший, весёлый,  симпатичный и «адекватный» человек. Маленькая порция человеческой эмпатии, вызванная видео-обращением, заставит относиться к вашей персоне по-иному, чем к массе кандидатов, представленных только сухими строчками жизнеописания.</em></p>
+									<div class="field videofile">
+										<span class="hint" data-toggle="tooltip" data-placement="right" title="Какой-то текст, объяснющий, что это за хрень">?</span>
+										<div class="image">
+											<img src="images/video.png" alt=""/> 
+											  <video id="video"></video>
+										</div>
+
+										<span class="b-upload"><input type="file" class="input" name="name" id="settings26"/>
+										<a href="#" class="button_white upload"><span>Загрузить</span></a></span>
+										<a href="#" id="button-play-gum"  class="button-demo button_white write "><span>Записать</span></a>
+										<a href="#" id="button-stop-gum" class="button-demo button_white hidden" href="#">Стоп</a>
+									    <span id="gum-unsupported" class="hidden">Ваш браузер не поддерживает getUserMedia API</span>
+									    <span id="gum-partially-supported" class="hidden">Ваш браузер поддерживает getUserMedia API частично (только видео)</span>
+
+
+										
+									</div>
+									  
+
+								</div>
+								<div class="fieldcell">
+										<label>Наши советы:</label>
+										<p><em>Представьтесь, расскажите о Вашем опыте, навыках, увлечениях, качествах и т.д.</em></p>
+										<p><em>В своем видео-обращении вы можете порассуждать на профессиональные темы.</em></p>
+										<p><em>Видео-обращение должно раскрывать и показывать вас.</em></p>
+										<p><em>Расскажите, почему Вы хотите и должны работать на данной позиции. </em></p>
+										<p><em>Не надо читать бумажную копию своего рассказа о себе перед камерой. Старайтесь говорить как можно более свободно и искренне.</em></p>
+										<p><em>Представьте, что ваши друзья или ваша семья смотрит ваше видео-обращение. </em></p>
+										<p><em>Старайтесь проводить съемку вдали от источников шума и в достаточно освещённом помещении.</em></p>
+								</div>
+
+							</div>	
+							<div class="buttonrow">		
+									<div class="field nowrap">
+											<button type="submit" value="1" class="button">Завершить</button>
+									</div>
+							</div>
+						</form>
+					</div>
+				</section>
+			</div>
+	</div>
+	<footer class="footer">
+		<div class="wrapper container-fluid">
+			 <div class="b-footer_row row">	
+					<div class="b-link col-md-6">
+							<div class="b-aboutlink">
+								 <a href="#">О нас</a>
+								 <a href="#">Связаться с нами</a>
+								 <a href="#">Помощь</a>
+								 <a href="#">Карьера</a>
+								 <a href="#">Детским центрам</a>
+							</div>
+							<div class="b-proflink ">
+								 <a href="#">Няни</a>
+								 <a href="#">Сиделки</a>
+								 <a href="#">Домработницы</a>
+								 <a href="#">Детские центры</a>
+							</div>
+					</div>
+					<div class="b-social_link col-md-6">
+							<span class="">Следите за нами в соцсетях</span>
+							<a href="#" class="link_tw" title="Twitter"></a>
+							<a href="#" class="link_fb" title="Facebook"></a>
+							<a href="#" class="link_vk" title="Vkontakte"></a>
+							<a href="#" class="link_ggl" title="Google+"></a>
+							<a href="#" class="link_odn" title="Odnoclasniki"></a>
+							<a href="#" class="link_ytb" title="Youtube"></a>
+					</div>
+			</div>
+			<div class="b-copy">© 2015 ООО «Новые сервисы». Все права защищены. Используя этот сайт, Вы соглашаетесь с нашими <a href="#">Условиями использования</a> и <a href="#">Политикой  конфиденциальности.</a></div>
+		</div>
+
+	</footer>
+
+</body>
+</html>

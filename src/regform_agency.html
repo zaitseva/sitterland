@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="ru"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie10 lt-ie9 lt-ie8" lang="ru"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie10 lt-ie9" lang="ru"> <![endif]-->
+<!--[if IE 9]>    <html class="lt-ie10" lang="ru"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="ru">
+	<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sitterland</title>
+    <link rel="stylesheet" href="css/style.css"/>
+
+	<script type="text/javascript" src="js/libs.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+	
+</head>
+<body>
+	<div class="homepage">
+			<header id="header" class="header">	
+				<div class="wrapper clearfix">
+					<div class="logo">
+						<a href="#"><img src="./icons/logo.png" alt="Sitterland"></a>
+						<span class="slogan">Выбирая лучших!</span>
+					</div>
+				</div>
+			</header>
+		 	<div class="b-container wrapper clearfix">
+					<ol class="breadcrumb">
+						<li><a href="#">Главная</a></li>
+						<li><span>Регистрация агентства</span></li>
+						<li class="active"><span>Основная информация</span></li>
+					</ol>
+				<section class="b-content clearfix b-reg_content">
+					<div class="b-steps_reg w220">
+						<a href="#" class="reg_link_other">Кликните здесь, <br/>если Вы наниматель <br/>(прямой работодатель)</a>
+						<div class="b-step active">
+							<a href="#" class="name">Основная информация</a>
+							<p><em>Заполните основную информацию учётной записи чтобы начать работу с сервисом.</em></p>
+						</div>
+						<div class="b-step"><span  class="name">Доступ к контактам</span>
+						<p><em>Выберите подходящий тип доступа, совершите оплату</em></p>
+						</div>
+						<div class="b-step"><span class="name">Добавить вакансию</span></div>
+					</div>
+					<div class="b-reform">
+						<h1>Регистрация агентства</h1>
+						<form action="#" class="b-form">
+							<h2>Общая информация</h2>
+							<div class="fieldrow">
+								<div class="fieldcell w460">
+									<label for="settings05">Название</label>
+									<div class="field validate">
+										<input type="text" class="input" name="name" maxlength="30" id="settings05"  placeholder="Название агенства" value="«Крутые няньки»" data-required="true" />
+										<em class="error required">Заполните</em>
+									</div>
+								</div>	
+							</div> 
+							
+							<div class="fieldrow">
+								<div class="fieldcell">
+									<label for="settings07">Город</label>
+									<div class="field validate">
+										<input type="text" class="input" name="city" maxlength="30" id="settings07"  placeholder="Город" value="Москва" data-required="true" />
+										<em class="error required">Заполните</em>
+									</div>
+								</div>
+								<div class="fieldcell">
+									<label for="settings08">Метро</label>
+									<div class="field validate">
+										<input type="text" class="input" name="city" maxlength="30" id="settings08"  placeholder="Метро" value="Университет" data-required="true" />
+										<em class="error required">Заполните</em>
+									</div>
+								</div>
+							</div>
+							<div class="fieldrow">
+								<div class="fieldcell w460">
+									<label for="settings09">фактический Адрес<span class="hint" data-toggle="tooltip" data-placement="right" title="Какой-то текст, объяснющий, что это за хрень">?</span></label>
+									<div class="field validate">
+										<input type="text" class="input" name="address" maxlength="30" id="settings09"  placeholder="Улица, номер дома (строение/корпус)" value="" data-required="true" />
+										<em class="error required">Заполните</em>
+									</div>
+								</div>
+							</div> 
+							<h2>Контактная информация</h2>
+							<div class="fieldrow">
+								<div class="fieldcell w460">
+									<label for="settings01">Адрес электронной почты (имя пользователя)<span class="hint" data-toggle="tooltip" data-placement="right" title="Какой-то текст, объяснющий, что это за хрень">?</span></label>
+									<div class="field validate">
+										<input type="text" class="input" name="email" maxlength="30" id="settings01"  placeholder="Адрес электронной почты" value="" data-required="true" data-validate="email" />
+										<em class="error required">Заполните</em>
+										<em class="error validate">Некорректное значение</em>
+									</div>
+								</div>
+							</div> 
+							<div class="fieldrow">
+								<div class="fieldcell">
+									<label for="settings02">Пароль</label>
+									<div class="field validate">
+										<input type="password" class="input" name="password" maxlength="100" data-identity="#settings03" id="settings02" placeholder="Пароль" value="" data-required="true" />
+										<em class="error required">Заполните</em>
+									</div>
+								</div>
+								<div class="fieldcell">
+									<label>&nbsp;</label>
+									<div class="field validate">
+										<input type="password" class="input" name="passwordre" maxlength="100" data-identity="#settings02" id="settings03" placeholder="Повторите пароль" value="" data-required="true" />
+										<em class="error required">Заполните</em>
+										<em class="error identity">Пароли не совпадают</em>
+									</div>
+								</div>
+							</div>
+							<div class="fieldrow">
+								<div class="fieldcell">
+									<label for="settings011">Телефон</label>
+									<div class="field validate">
+										<input type="text" class="input phone_mask" name="phone" maxlength="100"  id="settings011" placeholder="Телефон +7 (ХХХ) ХХХ-ХХ-ХХ" value="" data-required="true" />
+										<em class="error required">Заполните</em>
+									</div>
+								</div>
+								<div class="fieldcell">
+									<label for="settings012">Сайт</label>
+									<div class="field validate">
+										<input type="text" class="input" name="website" maxlength="100" id="settings012" placeholder="http://" value="http://" data-required="true" />
+										<em class="error required">Заполните</em>
+									</div>
+								</div>
+							</div>
+							<h2>Информация профиля</h2>
+							<div class="fieldrow">
+								<div class="fieldcell w460">
+									<label for="settings14">Год основания</label>
+									<div class="field validate">
+										<select class="custom" name="name3" id="settings14"  tabindex="-1" data-placeholder="Не выбран">
+											<option></option>
+											<option value="01">2010</option>
+											<option value="02">2011</option>
+											<option value="03">2012</option>
+										</select>
+									</div>
+								</div>	
+							</div>
+						   <div class="fieldrow">
+								<div class="fieldcell w460">
+									<label>Об агентстве</label>
+									<div class="field validate">
+										<textarea name="about" cols="5" rows="7" class="textarea valtextarea" maxlength="3000" data-minlength="150" data-maxlength="3000"></textarea>										
+									</div>
+								</div>
+								 <div class="fieldcell">
+									<label>&nbsp;</label>
+									<p>
+									<em>Расскажите о вашем агентстве  (специализация, коллектив, преимущества и т.д.)</em>
+									<span class="num">0</span>
+									<em>Минимум 150 символов, максимум 3000 символов</em>
+									</p>
+								 </div>
+							</div>
+							 <div class="fieldrow">
+								<div class="fieldcell w460">
+									<label>Комиссия за подбор с нанимателя</label>
+									<div class="field validate">
+										<textarea name="about" cols="5" rows="7" class="textarea hsmall" maxlength="2000"></textarea>										
+									</div>
+								</div>
+								
+							</div>
+							 <div class="fieldrow">
+								<div class="fieldcell w460">
+									<label>Комиссия за трудоустройство с работника</label>
+									<div class="field validate">
+										<textarea name="about" cols="5" rows="7" class="textarea hsmall" maxlength="2000"></textarea>										
+									</div>
+								</div>
+							</div>
+
+							<div class="buttonrow">			
+									<div class="field">
+										<span class="chkwrap">
+											<input type="checkbox" class="custom agreebox" name="name" checked="checked" id="checkbox_2" value="2" /><label for="checkbox_2">Я прочитал и согласен с <a href="#">условиями использования</a> и <a href="#">политикой конфиденциальности</a></label> 
+										</span>
+									</div>
+									<div class="field nowrap">
+											<button type="submit" value="1" class="button">Сохранить и продолжить</button>
+									</div>
+							</div>
+						</form>
+					</div>
+				</section>
+			</div>
+	</div>
+	<footer class="footer">
+		<div class="wrapper container-fluid">
+			 <div class="b-footer_row row">	
+					<div class="b-link col-md-6">
+							<div class="b-aboutlink">
+								 <a href="#">О нас</a>
+								 <a href="#">Связаться с нами</a>
+								 <a href="#">Помощь</a>
+								 <a href="#">Карьера</a>
+								 <a href="#">Детским центрам</a>
+							</div>
+							<div class="b-proflink ">
+								 <a href="#">Няни</a>
+								 <a href="#">Сиделки</a>
+								 <a href="#">Домработницы</a>
+								 <a href="#">Детские центры</a>
+							</div>
+					</div>
+					<div class="b-social_link col-md-6">
+							<span class="">Следите за нами в соцсетях</span>
+							<a href="#" class="link_tw" title="Twitter"></a>
+							<a href="#" class="link_fb" title="Facebook"></a>
+							<a href="#" class="link_vk" title="Vkontakte"></a>
+							<a href="#" class="link_ggl" title="Google+"></a>
+							<a href="#" class="link_odn" title="Odnoclasniki"></a>
+							<a href="#" class="link_ytb" title="Youtube"></a>
+					</div>
+			</div>
+			<div class="b-copy">© 2015 ООО «Новые сервисы». Все права защищены. Используя этот сайт, Вы соглашаетесь с нашими <a href="#">Условиями использования</a> и <a href="#">Политикой  конфиденциальности.</a></div>
+		</div>
+
+	</footer>
+
+</body>
+</html>

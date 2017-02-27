@@ -1,0 +1,227 @@
+{"libs": 
+	[
+	{
+		"id": "1",
+		"regions":[
+			{
+				"current": true,
+				"city": "Москва",
+				"id": "77",
+				"coordinates": [55.76,37.64],
+				"metro": [
+					{"station":"Речной вокзал",
+					"id": "1",
+					"points": [
+						{
+						"id": "9",
+						"remot":"2 км", 
+						"pay": "350",
+						"exp":"4 года",
+						"age":"женщина, 35 лет",
+						"img":"./images/avatar_map.gif",
+						"name":"Екатерина К.",
+						"link":"crew_view.html",
+						"coordinates": [55.7647144122,37.5717483543]
+						},
+						{
+						"id": "10",
+						"remot":"2 км", 
+						"pay": "350",
+						"exp":"4 года",
+						"age":"женщина, 35 лет",
+						"img":"./images/avatar_map.gif",
+						"name":"Екатерина К.",
+						"link":"crew_view.html",
+						"coordinates": [55.7804654496,37.634653289]
+						}
+					]},
+
+					{"station":"Аэропорт",
+					"id": "2",
+					"points": [
+						{
+						"id": "11",
+						"remot":"2 км", 
+						"pay": "350",
+						"exp":"4 года",
+						"age":"женщина, 35 лет",
+						"img":"./images/avatar_map.gif",
+						"name":"Екатерина К.",
+						"link":"crew_view.html",
+						"coordinates": [55.6937294292,37.4949511508]
+						}
+					]},
+
+					{"station":"Динамо",
+					"id": "3",
+					"points": [
+						{
+						"id": "12",
+						"remot":"2 км", 
+						"pay": "350",
+						"exp":"4 года",
+						"age":"женщина, 35 лет",
+						"img":"./images/avatar_map.gif",
+						"name":"Екатерина К.",
+						"link":"crew_view.html",
+						"coordinates": [55.7473535261,37.8627409067]
+						}
+					]},
+
+					{"station":"",
+					"id": "4",
+					"points": [
+						{
+						"id": "13",
+						"remot":"2 км", 
+						"pay": "350",
+						"exp":"4 года",
+						"age":"женщина, 35 лет",
+						"img":"./images/avatar_map.gif",
+						"name":"Екатерина К.",
+						"link":"crew_view.html",
+						"coordinates": [55.7438480368,37.566648449]
+						},
+						{
+						"id": "14",
+						"remot":"2 км", 
+						"pay": "350",
+						"exp":"4 года",
+						"age":"женщина, 35 лет",
+						"img":"./images/avatar_map.gif",
+						"name":"Екатерина К.",
+						"link":"crew_view.html",
+						"coordinates": [55.7579825666,37.4093059305]
+						}
+					]}
+				]
+			},
+			{
+				"city": "Санкт-Ленинград",
+				"id": "78",
+				"coordinates": [59.91815569,30.30558239],
+				"metro": [
+					{"station":"Автово",
+					"id": "5",
+					"points": [
+						{
+						"id": "15",
+						"remot":"2 км", 
+						"pay": "350",
+						"exp":"4 года",
+						"age":"женщина, 35 лет",
+						"img":"./images/avatar_map.gif",
+						"name":"Екатерина К.",
+						"link":"crew_view.html",
+						"coordinates": [59.8422,30.2505]
+						},
+						{
+						"id": "16",
+						"remot":"2 км", 
+						"pay": "350",
+						"exp":"4 года",
+						"age":"женщина, 35 лет",
+						"img":"./images/avatar_map.gif",
+						"name":"Екатерина К.",
+						"link":"crew_view.html",
+						"coordinates": [59.9718,30.2599]
+						}
+					]},
+
+					{"station":"Василеостровская",
+					"id": "6",
+					"points": [
+						{
+						"id": "17",
+						"remot":"2 км", 
+						"pay": "350",
+						"exp":"4 года",
+						"age":"женщина, 35 лет",
+						"img":"./images/avatar_map.gif",
+						"name":"Екатерина К.",
+						"link":"crew_view.html",
+						"coordinates": [59.8535,30.24568]
+						}
+					]},
+
+					{"station":"Политехническая",
+					"id": "7",
+					"points": [
+						{
+						"id": "18",
+						"remot":"2 км", 
+						"pay": "350",
+						"exp":"4 года",
+						"age":"женщина, 35 лет",
+						"img":"./images/avatar_map.gif",
+						"name":"Екатерина К.",
+						"link":"crew_view.html",
+						"coordinates": [59.945761,30.215724]
+						}
+					]},
+
+					{"station":"Проспект Просвещения",
+					"id": "8",
+					"points": [
+						{
+						"id": "19",
+						"remot":"2 км", 
+						"pay": "350",
+						"exp":"4 года",
+						"age":"женщина, 35 лет",
+						"img":"./images/avatar_map.gif",
+						"name":"Екатерина К.",
+						"link":"crew_view.html",
+						"coordinates": [59.9612,30.292]
+						},
+						{
+						"id": "20",
+						"remot":"2 км", 
+						"pay": "350",
+						"exp":"4 года",
+						"age":"женщина, 35 лет",
+						"img":"./images/avatar_map.gif",
+						"name":"Екатерина К.",
+						"link":"crew_view.html",
+						"coordinates": [60.0514,30.3326]
+						}
+					]}
+				]
+			},
+			{
+				"city": "Воронеж",
+				"id": "36",
+				"coordinates": [51.676812,39.203034],
+				"metro": [
+					{"station":"",
+					"id": "9",
+					"points": [
+						{
+						"id": "21",
+						"remot":"2 км", 
+						"pay": "350",
+						"exp":"4 года",
+						"age":"женщина, 35 лет",
+						"img":"./images/avatar_map.gif",
+						"name":"Екатерина К.",
+						"link":"crew_view.html",
+						"coordinates": [51.662242,39.181318]
+						},
+						{
+						"id": "22",
+						"remot":"2 км", 
+						"pay": "350",
+						"exp":"4 года",
+						"age":"женщина, 35 лет",
+						"img":"./images/avatar_map.gif",
+						"name":"Екатерина К.",
+						"link":"crew_view.html",
+						"coordinates": [51.666112,39.191833]
+						}
+					]}
+				]
+			}
+		]
+	}
+	]
+}

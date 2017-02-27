@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="ru"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie10 lt-ie9 lt-ie8" lang="ru"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie10 lt-ie9" lang="ru"> <![endif]-->
+<!--[if IE 9]>    <html class="lt-ie10" lang="ru"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="ru">
+	<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sitterland</title>
+    <link rel="stylesheet" href="css/style.css"/>
+
+	<script type="text/javascript" src="js/libs.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+	
+</head>
+<body  class="page-auth">
+	<div class="homepage">
+			<header id="header" class="header">	
+				<div class="wrapper clearfix">
+					<div class="logo">
+						<a href="#"><img src="./icons/logo.png" alt="Sitterland"></a>
+						<span class="slogan">Выбирая лучших!</span>
+					</div>
+				</div>
+			</header>
+		 	<div class="b-container wrapper clearfix">
+					<ol class="breadcrumb">
+						<li><a href="#">Главная</a></li>
+						<li><span>Регистрация работника</span></li>
+						<li class="active"><span>Информация профиля</span></li>
+					</ol>
+					
+				<section class="b-content clearfix b-reg_content">
+					<div class="b-steps_reg w220">
+						<div class="b-step ok">
+							<a href="#" class="name">Основная информация</a>
+							<p><em>Заполните основную информацию учётной записи чтобы начать работу с сервисом.</em></p>
+						</div>
+						<div class="b-step active">
+							<a href="#" class="name">ИНФОРМАЦИЯ ПРОФИЛЯ</a>
+							<p><em>Выберите тип, добавьте дополнительные услуги, а также заполните ваш график доступности.</em></p>
+						</div>
+						<div class="b-step"><span class="name">БИО, ФОТО И ВИДЕО</span></div>
+					</div>
+					<div class="b-reform" role="tabpanel">
+						<h1>Регистрация работника</h1>
+						<h2>Дополните свой профиль услугами</h2>
+						 <ul class="b-type_var" role="tablist">
+							<li role="presentation"><a href="#baby" role="tab" aria-controls="baby" data-toggle="tab">
+								<span class="b-letter">Н</span>
+								Няня
+							</a></li>
+							<li role="presentation"><a href="#sitted"  role="tab" aria-controls="sitted" data-toggle="tab">
+								<span class="b-letter">С</span>
+								Сиделка
+							</a></li>
+							<li role="presentation"><a href="#home"  aria-controls="home" role="tab" data-toggle="tab">
+								<span class="b-letter">Д</span>
+								Домработник(ца)
+							</a> </li>
+						 </ul>
+						<div class="tab-content"> 
+						<form action="#" class="b-form" id="home" role="tabpanel">
+							<div class="fieldrow selgroup inpprice">
+								<div class="fieldcell">
+									<label>Уровень заработной платы за выход</label>
+									<div class="field validate">
+										<span class="exectly hidden"><input type="text" class="input mask5" name="price01" id="settings19" placeholder="700 руб." value="" /></span>
+										<span class="range">
+										<input type="text" class="input maskfrom5" name="pricefrom01" id="settings21"  value="" placeholder="От 500 руб."/>
+										<input type="text" class="input maskfrom5" name="pricebefore01" id="settings22" value="" placeholder="До 1 000 руб." />
+										</span>
+										<div class="exec">
+											<span class="range">
+											<a href="#">Изменить на точное значение</a> <span class="example">(Пример: 700 р)</span>	</span>
+											<span class="exectly hidden">
+											<a href="#">Изменить на диапазон</a> <span class="example">(Пример: 500-1000 руб)</span>	</span>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="fieldrow selgroup inpprice">
+								<div class="fieldcell">
+									<label>Уровень заработной платы в месяц</label>
+									<div class="field validate">
+										<span class="exectly hidden"><input type="text" class="input mask6" name="price02" id="settings20"  placeholder="25 000 руб." value="" /></span>
+										<span class="range">
+										<input type="text" class="input maskfrom6" name="pricefrom02" id="settings33"  value="" placeholder="От 25 000 руб." />
+										<input type="text" class="input maskbefore6" name="pricebefore02" id="settings34"  value="" placeholder="До 50 000 руб." />
+										</span>
+										<div class="exec">
+											<span class="range">
+											<a href="#">Изменить на точное значение</a> <span class="example">(Пример: 25 000 р)</span>	</span>
+											<span class="exectly hidden">
+											<a href="#">Изменить на диапазон</a> <span class="example">(Пример: 25 000-50 000 руб)</span>	</span>
+										</div>
+									</div>
+								</div>		
+							</div>
+							<div class="fieldrow">
+								<div class="fieldcell">
+									<label for="settings25">Общий стаж</label>
+									<div class="field validate">
+										<select class="custom sel_scroll" name="age" id="settings25" tabindex="-1">
+											<option value="04" selected>нет</option>
+											<option value="01">менее года</option>
+											<option value="02">1 год</option>
+											<option value="03">2 года</option>
+											<option value="05">3 года</option>
+											<option value="06">4 года</option>
+											<option value="07">5 лет</option>
+											<option value="08">6 лет</option>
+											<option value="09">7 лет</option>
+											<option value="010">8 лет</option>
+											<option value="011">9 лет</option>
+											<option value="012">10 лет</option>
+											<option value="013">более 10 лет</option>
+										</select>
+									</div>
+								</div>	
+							</div>
+							<div class="fieldrow chckgroup">
+								<div class="fieldcell">
+									<label for="settings26">Место работы</label>
+									<div class="field validate">
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" id="checkbox_2" tabindex="-1" value="2" /><label for="checkbox_2">Без проживания в семье</label> 
+										</span>
+									</div>
+								</div>
+								<div class="fieldcell">
+									<label>&nbsp;</label>
+									<div class="field validate">
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name"  id="checkbox_1" value="2" /><label for="checkbox_1">С проживанием в семье</label> 
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="fieldrow chckgroup">
+								<div class="fieldcell">
+									<label for="settings27">услуги</label>
+									<div class="field validate">
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_3" value="2" /><label for="checkbox_3">Уборка жилых комнат</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name"  id="checkbox_9" value="2" /><label for="checkbox_9">Уборка ванной и санузла</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_4" value="2" /><label for="checkbox_4">Уборка кухни, мытьё посуды</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_10" value="2" /><label for="checkbox_10">Уход за одеждой и обувью</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_5" value="2" /><label for="checkbox_5">Стирка, глажка</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_11" value="2" /><label for="checkbox_11">Чистка ковров</label> 
+										</span>
+										
+									</div>
+								</div>
+								<div class="fieldcell">
+									<label>&nbsp;</label>
+									<div class="field validate">
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_6" value="2" /><label for="checkbox_6">Мытье окон</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_12" value="2" /><label for="checkbox_12">Уход за цветами и растениями</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_7" value="2" /><label for="checkbox_7">Приготовление еды</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_13" value="2" /><label for="checkbox_13">Покупка продуктов</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_8" value="2" /><label for="checkbox_8">Уход за домашними животными</label> 
+										</span>
+										
+										
+									</div>
+								</div>
+							</div>
+							<div class="fieldrow">
+								<label for="settings28">Ваш график доступности</label>
+								<div class="b-graph js-schedule">
+									<table>
+										<tr>
+											<th></th>
+											<th>Пн</th>
+											<th>Вт</th>
+											<th>Ср</th>
+											<th>Чт</th>
+											<th>Пт</th>
+											<th>Сб</th>
+											<th>Вс</th>
+											<th></th>
+											<td rowspan="8" class="radiogroup">
+												<span class="chkwrap">
+													<input type="radio" checked="checked" class="custom" name="name_06" id="radio_2" value="12" />
+													<label for="radio_2">Все время<em>Весь график</em></label> 
+												</span>
+												<span class="chkwrap">
+													<input type="radio"  class="custom" name="name_06" id="radio_3" value="13" />
+													<label for="radio_3">Полная рабочая неделя<em>Будни с 09:00 до 18:00</em></label> 
+												</span>
+												<span class="chkwrap">
+													<input type="radio" class="custom timesel" name="name_06" id="radio_4" value="14" />
+													<label for="radio_4">Определённые часы<em>Пользовательский выбор</em></label> 
+												</span>
+												<span class="chkwrap">
+													<input type="radio" class="custom" name="name_06" id="radio_5" value="15" />
+													<label for="radio_5">День<em>Все дни с 15:00 до 18:00</em></label> 
+												</span>
+												<span class="chkwrap">
+													<input type="radio" class="custom" name="name_06" id="radio_6" value="16" />
+													<label for="radio_6">Вечер<em>Все дни с 18:00 до 21:00</em></label> 
+												</span>
+												<span class="chkwrap">
+													<input type="radio" class="custom" name="name_06" id="radio_7" value="17" />
+													<label for="radio_7">Поздний вечер<em>Все дни c 21:00 до 00:00</em></label> 
+												</span>
+												<span class="chkwrap">
+													<input type="radio" class="custom" name="name_06" id="radio_8" value="18" />
+													<label for="radio_8">Ночное время<em>Все дни с 00:00 до 06:00</em></label> 
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td>Раннее утро <span class="time">06:00 - 09:00</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_14" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked"  id="checkbox_15" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input  checked="checked"  type="checkbox" class="custom" name="name" id="checkbox_16" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" checked="checked"  class="custom" name="name" id="checkbox_17" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_18" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name"  checked="checked" id="checkbox_19" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" id="checkbox_20"  checked="checked" value="2" />
+											</span></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>Утро <span class="time">09:00 - 12:00</span></td>
+											<td><span class="chkwrap">
+											<input  checked="checked" type="checkbox" class="custom" name="name" id="checkbox_21" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox"  checked="checked" class="custom" name="name" id="checkbox_22" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_23" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked"  id="checkbox_24" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" id="checkbox_25"  checked="checked" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" id="checkbox_26"  checked="checked"  value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_27" value="2" />
+											</span></td>
+										</tr>
+										<tr>
+											<td>Начало дня <span class="time">12:00 - 15:00</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_28" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_29" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_30" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_31" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_32" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_33" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_34" value="2" />
+											</span></td>
+												<td></td>
+										</tr>
+										<tr>
+											<td>День <span class="time">15:00 - 18:00</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_35" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_36" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name"  checked="checked" id="checkbox_37" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name"  checked="checked" id="checkbox_38" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked"  id="checkbox_39" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked"  id="checkbox_40" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked"  id="checkbox_41" value="2" />
+											</span></td>
+												<td></td>
+										</tr>
+										<tr>
+											<td>Вечер <span class="time">18:00 - 21:00</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_42" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_43" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_44" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_45" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_46" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_47" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_48" value="2" />
+											</span></td>
+												<td></td>
+										</tr><tr>
+											<td>Поздний вечер <span class="time">21:00 - 00:00</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_49" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_50" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_51" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_52" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_53" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_54" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_55" value="2" />
+											</span></td>
+												<td></td>
+										</tr>
+										<tr>
+											<td>Ночь <span class="time">00:00 - 06:00</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_56" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_57" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_58" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_59" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_60" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_61" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_62" value="2" />
+											</span></td>
+												<td></td>
+										</tr>
+									</table>
+								</div>
+								<div class="calendrow">
+										<span class="chkwrap">
+										<input type="text" class="input datepicker maskdate" name="calend"  id="settings29"  placeholder="Действителен до 28/10/2014" value="" />
+										</span>
+									   <span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_63" value="2" /><label for="checkbox_63">Доступен на короткий срок</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_64" value="2" /><label for="checkbox_64">Доступен на длительный срок</label> 
+										</span>
+								</div>
+
+							</div>		
+							<div class="buttonrow">		
+									<div class="field nowrap">
+											<button type="submit" value="1" class="button">Сохранить и продолжить</button>
+									</div>
+							</div>
+						</form>
+						<form action="#" class="b-form" id="baby" role="tabpanel">
+							<div class="fieldrow selgroup inpprice">
+								<div class="fieldcell">
+									<label>Уровень заработной платы в час</label>
+									<div class="field validate">
+										<span class="exectly hidden"><input type="text" class="input mask4" name="price01" id="settings15" placeholder="200 руб." value="200" /></span>
+										<span class="range">
+										<input type="text" class="input maskfrom4" name="pricefrom01" id="settings31"  value="" placeholder="От 50 руб." />
+										<input type="text" class="input maskbefore4" name="pricebefore01" id="settings32" value="" placeholder="До 300 руб." />
+										</span>
+										<div class="exec">
+											<span class="range">
+											<a href="#">Изменить на точное значение</a> <span class="example">(Пример: 200 р)</span>	</span>
+											<span class="exectly hidden">
+											<a href="#">Изменить на диапазон</a> <span class="example">(Пример: 50-300 руб)</span>	</span>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="fieldrow selgroup inpprice">
+								<div class="fieldcell">
+									<label>Уровень заработной платы в месяц</label>
+									<div class="field validate">
+										<span class="exectly hidden"><input type="text" class="input mask6" name="price02" id="settings16"  placeholder="25 000 руб." value="" /></span>
+										<span class="range">
+										<input type="text" class="input maskfrom6" name="pricefrom02" id="settings33"  value="" placeholder="От 25 000 руб."  />
+										<input type="text" class="input maskbefore6" name="pricebefore02" id="settings34"  value="" placeholder="До 50 000 руб."/>
+										</span>
+										<div class="exec">
+											<span class="range">
+											<a href="#">Изменить на точное значение</a> <span class="example">(Пример: 25 000 р)</span>	</span>
+											<span class="exectly hidden">
+											<a href="#">Изменить на диапазон</a> <span class="example">(Пример: 25 000-50 000 руб)</span>	</span>
+										</div>
+									</div>
+								</div>		
+							</div>
+							<div class="fieldrow">
+								<div class="fieldcell">
+									<label for="settings35">Режим работы</label>
+									<div class="field validate">
+										<select class="custom" name="age"  tabindex="-1" id="settings35" data-placeholder="Выберите режим работы">
+											<option></option>
+											<option value="01">Полный рабочий день</option>
+											<option value="02">Частичная занятость</option>
+											<option value="03">Любой</option>
+										</select>
+									</div>
+								</div>	
+							</div>
+							<div class="fieldrow">
+								<div class="fieldcell">
+									<label for="settings36">Общий стаж</label>
+									<div class="field validate">
+										<select class="custom sel_scroll" name="age" id="settings36"  tabindex="-1">
+											<option value="04" selected>нет</option>
+											<option value="01">менее года</option>
+											<option value="02">1 год</option>
+											<option value="03">2 года</option>
+											<option value="05">3 года</option>
+											<option value="06">4 года</option>
+											<option value="07">5 лет</option>
+											<option value="08">6 лет</option>
+											<option value="09">7 лет</option>
+											<option value="010">8 лет</option>
+											<option value="011">9 лет</option>
+											<option value="012">10 лет</option>
+											<option value="013">более 10 лет</option>
+										</select>
+									</div>
+								</div>	
+							</div>
+							<div class="fieldrow chckgroup">
+								<div class="fieldcell">
+									<label for="settings37">Возрастные группы детей</label>
+									<div class="field validate">
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name"  id="checkbox_65" value="2" /><label for="checkbox_65">Груднички (0-1 года)</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" id="checkbox_66" value="2" /><label for="checkbox_66">Малыши (1-3 года)</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" id="checkbox_67" value="2" /><label for="checkbox_67">Дошкольники (4-6 лет))</label> 
+										</span>
+									</div>
+								</div>
+								<div class="fieldcell">
+									<label>&nbsp;</label>
+									<div class="field validate">
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name"  id="checkbox_68" value="2" /><label for="checkbox_68">Младшая школа (7-10 лет)</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name"  id="checkbox_69" value="2" /><label for="checkbox_69">Школьники (10 и более лет)</label> 
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="fieldrow">
+								<div class="fieldcell w460">
+									<label>Число детей в семье для одновременной работы</label>
+									<div class="field">
+										<span class="chkwrap">
+											<input type="radio" checked="checked" class="custom" name="name_02" id="radio_9" value="4" /><label for="radio_9">1</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="radio" class="custom" name="name_02" id="radio_10" value="5" /><label for="radio_10">2</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="radio"  class="custom" name="name_02" id="radio_11" value="4" /><label for="radio_11">3</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="radio" class="custom" name="name_02" id="radio_12" value="5" /><label for="radio_12">4 и более</label> 
+										</span>
+
+									</div>
+								</div>
+							</div>
+							<div class="fieldrow chckgroup">
+								<div class="fieldcell">
+									<label for="settings38">Место работы</label>
+									<div class="field validate">
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" id="checkbox_70" value="2" /><label for="checkbox_70">Без проживания в семье</label> 
+										</span>
+									</div>
+								</div>
+								<div class="fieldcell">
+									<label>&nbsp;</label>
+									<div class="field validate">
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name"  id="checkbox_71" value="2" /><label for="checkbox_71">С проживанием в семье</label> 
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="fieldrow chckgroup">
+								<div class="fieldcell">
+									<label for="settings39">Дополнительные услуги</label>
+									<div class="field validate">
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" id="checkbox_72" value="2" /><label for="checkbox_72">Приготовление еды</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name"  id="checkbox_76" value="2" /><label for="checkbox_76">Уборка, стирка, глажка</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" id="checkbox_73" value="2" /><label for="checkbox_73">Сопровождение ребёнка</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" id="checkbox_77" value="2" /><label for="checkbox_77">Развитие по возрасту</label> 
+										</span>
+										
+									</div>
+								</div>
+								<div class="fieldcell">
+									<label>&nbsp;</label>
+									<div class="field validate">
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name"  id="checkbox_74" value="2" /><label for="checkbox_74">Легкая работа по дому</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" id="checkbox_78" value="2" /><label for="checkbox_78">Разовые поручения</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name"  id="checkbox_75" value="2" /><label for="checkbox_75">Отдых с детьми, поездки</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name"  id="checkbox_79" value="2" /><label for="checkbox_79">Контроль выполнения домашних заданий</label> 
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="fieldrow">
+								<label for="settings40">Ваш график доступности</label>
+								<div class="b-graph js-schedule">
+									<table>
+										<tr>
+											<th></th>
+											<th>Пн</th>
+											<th>Вт</th>
+											<th>Ср</th>
+											<th>Чт</th>
+											<th>Пт</th>
+											<th>Сб</th>
+											<th>Вс</th>
+											<th></th>
+											<td rowspan="8" class="radiogroup">
+												<span class="chkwrap">
+													<input type="radio" checked="checked" class="custom" name="name_07" id="radio_13" value="12" />
+													<label for="radio_13">Все время<em>Весь график</em></label> 
+												</span>
+												<span class="chkwrap">
+													<input type="radio"  class="custom" name="name_07" id="radio_15" value="13" />
+													<label for="radio_15">Полная рабочая неделя<em>Будни с 09:00 до 18:00</em></label> 
+												</span>
+												<span class="chkwrap">
+													<input type="radio" class="custom timesel" name="name_07" id="radio_16" value="14" />
+													<label for="radio_16">Определённые часы<em>Пользовательский выбор</em></label> 
+												</span>
+												<span class="chkwrap">
+													<input type="radio" class="custom" name="name_07" id="radio_17" value="15" />
+													<label for="radio_17">После школы<em>Все дни с 15:00 до 18:00</em></label> 
+												</span>
+												<span class="chkwrap">
+													<input type="radio" class="custom" name="name_07" id="radio_18" value="16" />
+													<label for="radio_18">Вечер<em>Все дни с 18:00 до 21:00</em></label> 
+												</span>
+												<span class="chkwrap">
+													<input type="radio" class="custom" name="name_07" id="radio_7" value="17" />
+													<label for="radio_7">Поздний вечер<em>Все дни c 21:00 до 00:00</em></label> 
+												</span>
+												<span class="chkwrap">
+													<input type="radio" class="custom" name="name_07" id="radio_8" value="18" />
+													<label for="radio_8">Ночное время<em>Все дни с 00:00 до 06:00</em></label> 
+												</span>
+											</td>
+										</tr>
+																				<tr>
+											<td>Раннее утро <span class="time">06:00 - 09:00</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_14" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked"  id="checkbox_15" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input  checked="checked"  type="checkbox" class="custom" name="name" id="checkbox_16" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" checked="checked"  class="custom" name="name" id="checkbox_17" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_18" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name"  checked="checked" id="checkbox_19" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" id="checkbox_20"  checked="checked" value="2" />
+											</span></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>Утро <span class="time">09:00 - 12:00</span></td>
+											<td><span class="chkwrap">
+											<input  checked="checked" type="checkbox" class="custom" name="name" id="checkbox_21" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox"  checked="checked" class="custom" name="name" id="checkbox_22" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_23" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked"  id="checkbox_24" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" id="checkbox_25"  checked="checked" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" id="checkbox_26"  checked="checked"  value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_27" value="2" />
+											</span></td>
+										</tr>
+										<tr>
+											<td>Начало дня <span class="time">12:00 - 15:00</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_28" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_29" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_30" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_31" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_32" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_33" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_34" value="2" />
+											</span></td>
+												<td></td>
+										</tr>
+										<tr>
+											<td>День <span class="time">15:00 - 18:00</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_35" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_36" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name"  checked="checked" id="checkbox_37" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name"  checked="checked" id="checkbox_38" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked"  id="checkbox_39" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked"  id="checkbox_40" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked"  id="checkbox_41" value="2" />
+											</span></td>
+												<td></td>
+										</tr>
+										<tr>
+											<td>Вечер <span class="time">18:00 - 21:00</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_42" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_43" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_44" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_45" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_46" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_47" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_48" value="2" />
+											</span></td>
+												<td></td>
+										</tr><tr>
+											<td>Поздний вечер <span class="time">21:00 - 00:00</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_49" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_50" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_51" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_52" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_53" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_54" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_55" value="2" />
+											</span></td>
+												<td></td>
+										</tr>
+										<tr>
+											<td>Ночь <span class="time">00:00 - 06:00</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_56" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_57" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_58" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_59" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_60" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_61" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_62" value="2" />
+											</span></td>
+												<td></td>
+										</tr>
+
+									</table>
+								</div>
+								<div class="calendrow">
+										<span class="chkwrap">
+										<input type="text" class="input datepicker maskdate" name="calend"  id="settings41"  placeholder="Действителен до 28/10/2014" value="" />
+										</span>
+									   <span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_129" value="2" /><label for="checkbox_129">Доступен на короткий срок</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_130" value="2" /><label for="checkbox_130">Доступен на длительный срок</label> 
+										</span>
+								</div>
+
+							</div>		
+							<div class="buttonrow">		
+									<div class="field nowrap">
+											<button type="submit" value="1" class="button">Сохранить и продолжить</button>
+									</div>
+							</div>
+
+						</form>
+						<form action="#" class="b-form" id="sitted" role="tabpanel">
+							<div class="fieldrow selgroup inpprice">
+								<div class="fieldcell">
+									<label>Уровень заработной платы в час</label>
+									<div class="field validate">
+										<span class="exectly hidden"><input type="text" class="input mask4" name="price01"  id="settings17"  placeholder="200 руб." value="" /></span>
+										<span class="range">
+										<input type="text" class="input maskfrom4" name="pricefrom01" id="settings42" value="" placeholder="От 50 руб."/>
+										<input type="text" class="input maskbefore4" name="pricebefore01" id="settings43" value="" placeholder="До 300 руб."/>
+										</span>
+										<div class="exec">
+											<span class="range">
+											<a href="#">Изменить на точное значение</a> <span class="example">(Пример: 200 р)</span>	</span>
+											<span class="exectly hidden">
+											<a href="#">Изменить на диапазон</a> <span class="example">(Пример: 50-300 руб)</span>	</span>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="fieldrow selgroup inpprice">
+								<div class="fieldcell">
+									<label>Уровень заработной платы в месяц</label>
+									<div class="field validate">
+										<span class="exectly hidden"><input type="text" class="input mask6" name="price02" id="settings18" placeholder="25 000 руб."  value="" /></span>
+										<span class="range">
+										<input type="text" class="input maskfrom6" name="pricefrom02"  id="settings44"  value="" placeholder="От 25 000 руб."  />
+										<input type="text" class="input maskbefore6" name="pricebefore02" id="settings45"  value="" placeholder="До 50 000 руб."/>
+										</span>
+										<div class="exec">
+											<span class="range">
+											<a href="#">Изменить на точное значение</a> <span class="example">(Пример: 25 000 р)</span>	</span>
+											<span class="exectly hidden">
+											<a href="#">Изменить на диапазон</a> <span class="example">(Пример: 25 000-50 000 руб)</span>	</span>
+										</div>
+									</div>
+								</div>		
+							</div>
+							<div class="fieldrow">
+								<div class="fieldcell">
+									<label for="settings46">Режим работы</label>
+									<div class="field validate">
+										<select class="custom" name="age" id="settings46" tabindex="-1" data-placeholder="Выберите режим работы">
+											<option></option>
+											<option value="01">Полный рабочий день</option>
+											<option value="02">Частичная занятость</option>
+											<option value="03">Любой</option>
+										</select>
+									</div>
+								</div>	
+							</div>
+							<div class="fieldrow">
+								<div class="fieldcell">
+									<label for="settings47">Общий стаж</label>
+									<div class="field validate">
+										<select class="custom sel_scroll" name="age" id="settings48"  tabindex="-1">
+											<option value="04" selected>нет</option>
+											<option value="01">менее года</option>
+											<option value="02">1 год</option>
+											<option value="03">2 года</option>
+											<option value="05">3 года</option>
+											<option value="06">4 года</option>
+											<option value="07">5 лет</option>
+											<option value="08">6 лет</option>
+											<option value="09">7 лет</option>
+											<option value="010">8 лет</option>
+											<option value="011">9 лет</option>
+											<option value="012">10 лет</option>
+											<option value="013">более 10 лет</option>
+										</select>
+									</div>
+								</div>	
+							</div>
+							<div class="fieldrow chckgroup">
+								<div class="fieldcell">
+									<label for="settings49">Возрастные группы</label>
+									<div class="field validate">
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_131" value="2" /><label for="checkbox_131">Дети (0-6 лет)</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_132" value="2" /><label for="checkbox_132">Дети и подростки (7-17 лет)</label> 
+										</span>
+									</div>
+								</div>
+								<div class="fieldcell">
+									<label>&nbsp;</label>
+									<div class="field validate">
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_133" value="2" /><label for="checkbox_133">Взрослые (18-54 года)</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_134" value="2" /><label for="checkbox_134">Пожилые (55 и более лет)</label> 
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="fieldrow">
+								<div class="fieldcell w460">
+									<label>Число детей в семье для одновременной работы</label>
+									<div class="field">
+										<span class="chkwrap">
+											<input type="radio" checked="checked" class="custom" name="name_08" id="radio_19" value="4" /><label for="radio_19">1</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="radio" class="custom" name="name_08" id="radio_20" value="5" /><label for="radio_20">2</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="radio" class="custom" name="name_08" id="radio_21" value="4" /><label for="radio_21">3</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="radio" class="custom" name="name_08" id="radio_22" value="5" /><label for="radio_22">4 и более</label> 
+										</span>
+
+									</div>
+								</div>
+							</div>
+							<div class="fieldrow chckgroup">
+								<div class="fieldcell">
+									<label for="settings50">Место работы</label>
+									<div class="field validate">
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" id="checkbox_135" value="2" /><label for="checkbox_135">Без проживания в семье</label> 
+										</span>
+									</div>
+								</div>
+								<div class="fieldcell">
+									<label>&nbsp;</label>
+									<div class="field validate">
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name"  id="checkbox_136" value="2" /><label for="checkbox_136">С проживанием в семье</label> 
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="fieldrow chckgroup">
+								<div class="fieldcell">
+									<label for="settings50">Дополнительные услуги</label>
+									<div class="field validate">
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_137" value="2" /><label for="checkbox_137">Приготовление еды</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_138" value="2" /><label for="checkbox_138">Сопровождение</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_139" value="2" /><label for="checkbox_139">Гигиена</label> 
+										</span>
+										
+									</div>
+								</div>
+								<div class="fieldcell">
+									<label>&nbsp;</label>
+									<div class="field validate">
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name"  id="checkbox_140" value="2" /><label for="checkbox_140">Массаж</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_141" value="2" /><label for="checkbox_141">Уборка, стирка, глажка</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_142" value="2" /><label for="checkbox_142">Разовые поручения</label> 
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="fieldrow chckgroup">
+								<div class="fieldcell">
+									<label for="settings51">Уход за больными</label>
+									<div class="field validate">
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_143" value="2" /><label for="checkbox_143">Послеоперационный уход</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_144" value="2" /><label for="checkbox_144">Внутримышечные инъекции</label> 
+										</span>
+										
+									</div>
+								</div>
+								<div class="fieldcell">
+									<label>&nbsp;</label>
+									<div class="field validate">
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name"  id="checkbox_145" value="2" /><label for="checkbox_145">Внутривенные инъекции, капельницы</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_146" value="2" /><label for="checkbox_146">Уход за лежачими больными</label> 
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="fieldrow chckgroup">
+								<div class="fieldcell">
+									<label for="settings52">Диагнозы</label>
+									<div class="field validate">
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_147" value="2" /><label for="checkbox_147">Аутизм</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_148" value="2" /><label for="checkbox_148">ДЦП</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_149" value="2" /><label for="checkbox_149">Постинфарктная реабилитация</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_150" value="2" /><label for="checkbox_150">Болезнь Паркинсона</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_151" value="2" /><label for="checkbox_151">Травмы, ампутации</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_152" value="2" /><label for="checkbox_152">Эпилепсия</label> 
+										</span>
+										
+									</div>
+								</div>
+								<div class="fieldcell">
+									<label>&nbsp;</label>
+									<div class="field validate">
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name"  id="checkbox_153" value="2" /><label for="checkbox_153">Болезнь Альцгеймера</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_154" value="2" /><label for="checkbox_154">Постинсультная реабилитация</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_155" value="2" /><label for="checkbox_155">Онкологические заболевания</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_156" value="2" /><label for="checkbox_156">Психические расстройства</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_157" value="2" /><label for="checkbox_157">Сахарный диабет</label> 
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="fieldrow">
+								<label for="settings53">Ваш график доступности</label>
+								<div class="b-graph js-schedule">
+									<table>
+										<tr>
+											<th></th>
+											<th>Пн</th>
+											<th>Вт</th>
+											<th>Ср</th>
+											<th>Чт</th>
+											<th>Пт</th>
+											<th>Сб</th>
+											<th>Вс</th>
+											<th></th>
+											<td rowspan="8" class="radiogroup">
+												<span class="chkwrap">
+													<input type="radio" checked="checked" class="custom" name="name_09" id="radio_23" value="12" />
+													<label for="radio_23">Все время<em>Весь график</em></label> 
+												</span>
+												<span class="chkwrap">
+													<input type="radio"  class="custom" name="name_09" id="radio_24" value="13" />
+													<label for="radio_24">Полная рабочая неделя<em>Будни с 09:00 до 18:00</em></label> 
+												</span>
+												<span class="chkwrap">
+													<input type="radio" class="custom timesel" name="name_09" id="radio_25" value="14" />
+													<label for="radio_25">Определённые часы<em>Пользовательский выбор</em></label> 
+												</span>
+												<span class="chkwrap">
+													<input type="radio" class="custom" name="name_09" id="radio_26" value="15" />
+													<label for="radio_26">День<em>Все дни с 15:00 до 18:00</em></label> 
+												</span>
+												<span class="chkwrap">
+													<input type="radio" class="custom" name="name_09" id="radio_27" value="16" />
+													<label for="radio_27">Вечер<em>Все дни с 18:00 до 21:00</em></label> 
+												</span>
+												<span class="chkwrap">
+													<input type="radio" class="custom" name="name_09" id="radio_28" value="17" />
+													<label for="radio_28">Поздний вечер<em>Все дни c 21:00 до 00:00</em></label> 
+												</span>
+												<span class="chkwrap">
+													<input type="radio" class="custom" name="name_09" id="radio_29" value="18" />
+													<label for="radio_29">Ночное время<em>Все дни с 00:00 до 06:00</em></label> 
+												</span>
+											</td>
+										</tr>
+																				<tr>
+											<td>Раннее утро <span class="time">06:00 - 09:00</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_14" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked"  id="checkbox_15" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input  checked="checked"  type="checkbox" class="custom" name="name" id="checkbox_16" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" checked="checked"  class="custom" name="name" id="checkbox_17" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_18" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name"  checked="checked" id="checkbox_19" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" id="checkbox_20"  checked="checked" value="2" />
+											</span></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>Утро <span class="time">09:00 - 12:00</span></td>
+											<td><span class="chkwrap">
+											<input  checked="checked" type="checkbox" class="custom" name="name" id="checkbox_21" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox"  checked="checked" class="custom" name="name" id="checkbox_22" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_23" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked"  id="checkbox_24" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" id="checkbox_25"  checked="checked" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" id="checkbox_26"  checked="checked"  value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_27" value="2" />
+											</span></td>
+										</tr>
+										<tr>
+											<td>Начало дня <span class="time">12:00 - 15:00</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_28" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_29" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_30" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_31" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_32" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_33" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_34" value="2" />
+											</span></td>
+												<td></td>
+										</tr>
+										<tr>
+											<td>День <span class="time">15:00 - 18:00</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_35" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_36" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name"  checked="checked" id="checkbox_37" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name"  checked="checked" id="checkbox_38" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked"  id="checkbox_39" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked"  id="checkbox_40" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked"  id="checkbox_41" value="2" />
+											</span></td>
+												<td></td>
+										</tr>
+										<tr>
+											<td>Вечер <span class="time">18:00 - 21:00</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_42" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_43" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_44" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_45" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_46" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_47" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_48" value="2" />
+											</span></td>
+												<td></td>
+										</tr><tr>
+											<td>Поздний вечер <span class="time">21:00 - 00:00</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_49" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_50" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_51" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_52" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_53" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_54" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_55" value="2" />
+											</span></td>
+												<td></td>
+										</tr>
+										<tr>
+											<td>Ночь <span class="time">00:00 - 06:00</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_56" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_57" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_58" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_59" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_60" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom"  checked="checked" name="name" id="checkbox_61" value="2" />
+											</span></td>
+											<td><span class="chkwrap">
+											<input type="checkbox" class="custom" checked="checked"  name="name" id="checkbox_62" value="2" />
+											</span></td>
+												<td></td>
+										</tr>
+
+									</table>
+								</div>
+								<div class="calendrow">
+										<span class="chkwrap">
+										<input type="text" class="input datepicker maskdate" name="calend"  id="settings54"  placeholder="Действителен до 28/10/2014" value="" />
+										</span>
+									   <span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_207" value="2" /><label for="checkbox_207">Доступен на короткий срок</label> 
+										</span>
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" checked="checked" id="checkbox_208" value="2" /><label for="checkbox_208">Доступен на длительный срок</label> 
+										</span>
+								</div>
+
+							</div>		
+							<div class="buttonrow">		
+									<div class="field nowrap">
+											<button type="submit" value="1" class="button">Сохранить и продолжить</button>
+									</div>
+							</div>
+
+
+						</form>
+						</div>
+					</div>
+				</section>
+			</div>
+	</div>
+	<footer class="footer">
+		<div class="wrapper container-fluid">
+			 <div class="b-footer_row row">	
+					<div class="b-link col-md-6">
+							<div class="b-aboutlink">
+								 <a href="#">О нас</a>
+								 <a href="#">Связаться с нами</a>
+								 <a href="#">Помощь</a>
+								 <a href="#">Карьера</a>
+								 <a href="#">Детским центрам</a>
+							</div>
+							<div class="b-proflink ">
+								 <a href="#">Няни</a>
+								 <a href="#">Сиделки</a>
+								 <a href="#">Домработницы</a>
+								 <a href="#">Детские центры</a>
+							</div>
+					</div>
+					<div class="b-social_link col-md-6">
+							<span class="">Следите за нами в соцсетях</span>
+							<a href="#" class="link_tw" title="Twitter"></a>
+							<a href="#" class="link_fb" title="Facebook"></a>
+							<a href="#" class="link_vk" title="Vkontakte"></a>
+							<a href="#" class="link_ggl" title="Google+"></a>
+							<a href="#" class="link_odn" title="Odnoclasniki"></a>
+							<a href="#" class="link_ytb" title="Youtube"></a>
+					</div>
+			</div>
+			<div class="b-copy">© 2015 ООО «Новые сервисы». Все права защищены. Используя этот сайт, Вы соглашаетесь с нашими <a href="#">Условиями использования</a> и <a href="#">Политикой  конфиденциальности.</a></div>
+		</div>
+
+	</footer>
+
+</body>
+</html>

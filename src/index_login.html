@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="ru"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie10 lt-ie9 lt-ie8" lang="ru"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie10 lt-ie9" lang="ru"> <![endif]-->
+<!--[if IE 9]>    <html class="lt-ie10" lang="ru"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="ru" id="loginpage">
+	<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sitterland</title>
+    <link rel="stylesheet" href="css/style.css"/>
+
+	<script type="text/javascript" src="js/libs.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+	
+</head>
+<body class="loginpage">
+	<div class="homepage">
+			<div class="alert fade in alert-warning">
+				<div class="wrapper">
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+					<p class="b_warn">Сервис временно недоступен. Попробуйте позднее. Мы работаем над ошибками.</p>
+				</div>
+			</div>
+			<header id="header" class="header">	
+				<div class="logo"><a href="#"><img src="./icons/logo_login.png" alt="Sitterland"></a></div>
+			</header>
+		 	<section class="b-login">
+				<form action="." class="b-form" method="post">
+						<div class="fieldrow">
+								<div class="fieldcell iblock">
+									<div class="field validate">
+										<input type="text" class="input" name="email" maxlength="30" id="settings01"  placeholder="E-mail" value="" data-required="true" data-validate="email" />
+										<em class="error required">Заполните</em>
+										<em class="error validate">Некорректное значение</em>
+									</div>
+								</div>
+						</div>
+						<div class="fieldrow">
+								<div class="fieldcell iblock">
+									<div class="field validate">
+										<input type="password" class="input" name="password" maxlength="100" id="settings02" placeholder="Пароль" value="" data-required="true" />
+										<em class="error required">Заполните</em>
+									</div>
+								</div>
+						</div>
+
+						<div class="fieldrow">
+								<div class="fieldcell">
+									<div class="field">
+										<span class="chkwrap">
+											<input type="checkbox" class="custom" name="name" id="checkbox_2" value="2" /><label for="checkbox_2">Запомнить меня</label> 
+										</span>
+									</div>
+								</div>
+							</div>
+						<div class="buttonrow">
+								<div class="fieldcell">
+									<div class="field nowrap">
+											<button type="submit" value="1" class="button">Войти</button>
+											<a href="#">Забыли пароль?</a>
+									</div>
+								</div>
+								
+						</div>
+						<div class="b-reg_bl">
+							Впервые на сайте? <a href="#">Зарегистрируйтесь</a>.
+						</div>
+				</form>	
+				<p>При осуществлении входа в систему, Вы соглашаетесь с нашими <a href="#">Условиями использования</a> и <a href="#">Политикой  конфиденциальности.</a></p>
+				<p class="b-copy">© 2015 ООО «Новые сервисы». Все права защищены.</p>
+		</section>
+	</div>
+</body>
+</html>
